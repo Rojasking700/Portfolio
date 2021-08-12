@@ -1,92 +1,192 @@
 <template>
-    <header :class="{ 'scrolled-nav' : scrollPosition }">
-        <div class="branding">
-            <img src="../assets/crown.png" alt="">
-        </div>
-        <ul v-show="!mobile" class="navigation">
-            <li><router-link class="link" :to="{name: 'Home'}">Home</router-link></li>
-            <li><router-link class="link" :to="{name: ''}">About</router-link></li>
-            <li><router-link class="link" :to="{name: ''}">Portfolio</router-link></li>
-            <li><router-link class="link" :to="{name: ''}">Contact</router-link></li>
-        </ul>
+    <header :class="{ 'scrolled-nav' : scrolledNav }">
+        <nav>
+            <div class="branding">
+                <img src="../assets/crown1.png" alt="">
+            </div>
+            <ul v-show="!mobile" class="navigation">
+                <li><router-link class="link" :to="{name: 'Home'}">Home</router-link></li>
+                <li><router-link class="link" :to="{name: ''}">About</router-link></li>
+                <li><router-link class="link" :to="{name: ''}">Portfolio</router-link></li>
+                <li><router-link class="link" :to="{name: ''}">Contact</router-link></li>
+            </ul>
+            <div class="icon">
+                <i @click="toggleMobileNav" v-show="mobile" class="far fa-bars" :class="{'icon-active' : mobileNav}"></i>
+            </div>
+            <transition name="mobile-nav">
+                <ul v-show="mobileNav" class="dropdown-nav">
+                    <li><router-link class="link" :to="{name: 'Home'}">Home</router-link></li>
+                    <li><router-link class="link" :to="{name: ''}">About</router-link></li>
+                    <li><router-link class="link" :to="{name: ''}">Portfolio</router-link></li>
+                    <li><router-link class="link" :to="{name: ''}">Contact</router-link></li>
+                </ul>
+            </transition>
+        </nav>
     </header>
 </template>
 
 <script>
 export default {
-    // setup() {
-    //     const myFunction = () => {
-    //         var x = document.getElementsById("nav");
-    //         if (x.className ==="nav"){
-    //             x.className += "responsive";
-    //         }else {
-    //             x.className = 'nav';
-    //         }
-    //     }
+    name: "Nav",
+    data() {
+        return {
+            scrolledNav: null,
+            mobile: null,
+            mobileNav: null,
+            windowWidth: null
+        }
+    },
+    created() {
+        window.addEventListener('resize', this.checkScreen);
+        this.checkScreen();
+    },
+    methods : {
+        toggleMobileNav () {
+            this.mobileNav = !this.mobileNav;
+        },
 
-    //     return {myFunction}
-    // }
-}
+        updateScroll() {
+            const scrollPosition = window.scrollY;
+            if (scrollPosition > 50) {
+                this.scrolledNav = true;
+                return;
+            }
+            this.scrolledNav = false;
+        },
+
+        checkScreen() {
+            this.windowWidth = window.innerWidth;
+            if(this.windowWidth <= 800){
+                this.mobile = true;
+                return;
+            }
+            this.mobile = false;
+            this.mobileNav = false;
+            return;
+        }
+    },
+};
 </script>
 
 <style>
-    /* .nav {
-        padding: 3rem;
-        position: absolute;
+
+    header { 
+        /* background-color: rgba(0,0,0,0.8); */
+        z-index: 99;
         width: 100%;
-        min-height: 10vh;
-        z-index:1000;
-        display:flex;
-        align-items: center;
-        justify-content: space-between;
+        position: fixed;
+        transition: .5s ease all;
         color: #fff;
-        text-shadow: 2px 2px black;
     }
-    .nav a {
-        color:#fff;
-        text-decoration: none;
-        padding-left: 10rem;
-        font-size: 1.2rem;
-        display: flex;
-    }
-    nav img {
-        height:2rem;
-        transform: rotate(-30deg);
 
+    nav {
+        position: relative;
+         display: flex;
+         flex-direction: row;
+         padding: 10px;
+         transition: .5s ease all;
+         width: 100%;
+         margin: 0 auto;
     }
-    .nav-links {
-        display: flex;
+    @media (min-width:1140px){
+        nav {
+            max-width: 1140px;
+        }
+    }
+
+    ul, .link{
+        font-weight: 500;
+        color: #fff;
         list-style: none;
-    }
-    .nav-links li {
-        padding-left: 10rem;
-        font-size: 1.2rem;
-    }
-    .nav .icon{
-        display: none;
+        text-decoration: none;
     }
 
-    @media (max-width: 800px) {
-        .nav a { display: none;}
-        .nav a.icon{
-            display: block;
-            float:right;
-        }
+    li{
+        text-transform: uppercase;
+        padding: 16px;
+        margin-left: 16px;
     }
-    @media (max-width: 800px) {
-        .nav.responsive { position: relative;}
-        .nav.responsive .icon {
-            position: absolute;
-            right: 0;
-            top: 0;
-        }
-        .nav.responsive a{
-            float: none;
-            display: block;
-            text-align: left;
-        }
+
+    .link {
+        font-size: 14px;
+        transition: .5s ease all;
+        padding-bottom: 4px;
+        border-bottom: 1px solid transparent;
     }
-     */
+    .link:hover{
+        color: #00afea;
+        border-color: #00afea;
+    }
+
+    .branding{
+        display: flex;
+        align-items: center;
+    }
+
+    .branding img {
+        width: 50px;
+        transition: .5s ease all;
+    }
+    
+    .navigation{
+        display: flex;
+        align-items: center;
+        flex: 1;
+        justify-content: flex-end;
+    }
+
+    .icon {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        right: 24px;
+        height: 100%;
+
+    }
+
+    .icon i {
+        cursor: pointer;
+        font-size: 24px;
+        transition: .8s ease all;
+    }
+
+    .icon-active {
+        transform: rotate(180deg);
+    }
+    .dropdown-nav {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        width: 100%;
+        max-width: 250px;
+        height: 100%;
+        background-color: #fff;
+        top:0;
+        left:0;
+    }
+
+    .dropdown-nav li {
+        margin-left: 0;
+    }
+    .dropdown-nav li .link {
+        color: #000;
+    }
+
+     .mobile-nav-enter-active,
+     .mobile-nav-leave-active {
+        transition: 1s ease all;
+
+    }
+
+     .mobile-nav-enter-from,
+     .mobile-nav-leave-to{
+        transform: translateX(-250px);
+    }
+
+     .mobile-nav-enter-to {
+        transform: translateX(0);
+    }
 
 </style>
 
