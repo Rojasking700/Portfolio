@@ -1,16 +1,18 @@
 <template>
-    <Nav class="nav"/>
-    <Landing />
+  <div class="home">
+    <img alt="Vue logo" src="../assets/logo.png">
+    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  </div>
 </template>
 
 <script>
-import Nav from '../components/Nav.vue'
-import Landing from '../components/Landing.vue'
+// @ is an alias to /src
+import HelloWorld from '@/components/HelloWorld.vue'
+
 export default {
-  components: { Landing, Nav },
-    
+  name: 'Home',
+  components: {
+    HelloWorld
+  }
 }
 </script>
-
-<style>
-</style>

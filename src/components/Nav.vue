@@ -4,7 +4,10 @@
             <img src="../assets/crown.png" alt="">
         </div>
         <ul v-show="!mobile" class="navigation">
-            <li><router-link class="link" :to="{}"> </router-link></li>
+            <li><router-link class="link" :to="{name: 'Home'}">Home</router-link></li>
+            <li><router-link class="link" :to="{name: ''}">About</router-link></li>
+            <li><router-link class="link" :to="{name: ''}">Portfolio</router-link></li>
+            <li><router-link class="link" :to="{name: ''}">Contact</router-link></li>
         </ul>
     </header>
 </template>
