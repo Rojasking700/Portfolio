@@ -16,7 +16,9 @@ export default {
 </script>
 
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
   *{
+    font-family: 'Fjalla One', sans-serif;
     padding: 0;
     margin: 0;
     box-sizing: border-box;

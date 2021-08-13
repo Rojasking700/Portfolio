@@ -2,11 +2,14 @@
     <header :class="{ 'scrolled-nav' : scrolledNav }">
         <nav>
             <div class="branding">
-                <img src="../assets/crown1.png" alt="">
+                    <router-link class="branding" :to="{name: 'Home'}">
+                        <img src="../assets/crown1.png" alt="">
+                        <h4>Rojasking700</h4>
+                    </router-link>
             </div>
             <ul v-show="!mobile" class="navigation">
                 <li><router-link class="link" :to="{name: 'Home'}">Home</router-link></li>
-                <li><router-link class="link" :to="{name: ''}">About</router-link></li>
+                <li><router-link class="link" :to="{name: 'About'}">About</router-link></li>
                 <li><router-link class="link" :to="{name: ''}">Portfolio</router-link></li>
                 <li><router-link class="link" :to="{name: ''}">Contact</router-link></li>
             </ul>
@@ -15,10 +18,12 @@
             </div>
             <transition name="mobile-nav">
                 <ul v-show="mobileNav" class="dropdown-nav">
-                    <li><router-link class="link" :to="{name: 'Home'}">Home</router-link></li>
-                    <li><router-link class="link" :to="{name: ''}">About</router-link></li>
-                    <li><router-link class="link" :to="{name: ''}">Portfolio</router-link></li>
-                    <li><router-link class="link" :to="{name: ''}">Contact</router-link></li>
+                    <div class="list">
+                        <li><router-link class="link" :to="{name: 'Home'}">Home</router-link></li>
+                        <li><router-link class="link" :to="{name: ''}">About</router-link></li>
+                        <li><router-link class="link" :to="{name: ''}">Portfolio</router-link></li>
+                        <li><router-link class="link" :to="{name: ''}">Contact</router-link></li>
+                    </div>
                 </ul>
             </transition>
         </nav>
@@ -77,22 +82,21 @@ export default {
         position: fixed;
         transition: .5s ease all;
         color: #fff;
+        text-shadow: 2px 2px black;
     }
 
     nav {
         position: relative;
-         display: flex;
-         flex-direction: row;
-         padding: 10px;
-         transition: .5s ease all;
-         width: 100%;
-         margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 10px;
+        transition: .5s ease all;
+        width: 100%;
+        font-size: 2vw;
+        margin: 0 auto;
     }
-    @media (min-width:1140px){
-        nav {
-            max-width: 1140px;
-        }
-    }
+    
 
     ul, .link{
         font-weight: 500;
@@ -108,7 +112,7 @@ export default {
     }
 
     .link {
-        font-size: 14px;
+        font-size: 1vw;
         transition: .5s ease all;
         padding-bottom: 4px;
         border-bottom: 1px solid transparent;
@@ -119,13 +123,29 @@ export default {
     }
 
     .branding{
+        color: #fff;
         display: flex;
         align-items: center;
+        flex-direction: row;
+        width: 100%;
+        font-size: 2vw;
+        text-decoration: none;
     }
 
     .branding img {
-        width: 50px;
+        /* position: absolute; */
+        width: 4.5vw;
+        transform: rotate(-30deg);
         transition: .5s ease all;
+    }
+    @media (max-width: 800px) {
+        .branding{
+            font-size: 4vw;
+        }
+        .branding img {
+            width: 6vw;
+        }
+        
     }
     
     .navigation{
@@ -142,7 +162,7 @@ export default {
         top: 0;
         right: 24px;
         height: 100%;
-
+        z-index: 101;
     }
 
     .icon i {
@@ -152,25 +172,39 @@ export default {
     }
 
     .icon-active {
-        transform: rotate(180deg);
+        transform: rotate(90deg);
+        color:black;
+        text-shadow: 2px 2px rgba(0, 0, 0, 0.212);
     }
     .dropdown-nav {
         display: flex;
         flex-direction: column;
         position: fixed;
         width: 100%;
-        max-width: 250px;
+        max-width: 33vw;
+        min-width: 150px;
         height: 100%;
         background-color: #fff;
         top:0;
-        left:0;
+        right:0;
     }
 
+    .dropdown-nav .list{
+        display: flex;
+        align-items: flex-end;
+        flex-direction: column;
+        position: absolute;
+        top: 30%;
+        right: 0;
+        padding: 5px;
+    }
     .dropdown-nav li {
         margin-left: 0;
     }
     .dropdown-nav li .link {
         color: #000;
+        font-size: 4vw;
+        text-shadow: none;
     }
 
      .mobile-nav-enter-active,
@@ -181,7 +215,7 @@ export default {
 
      .mobile-nav-enter-from,
      .mobile-nav-leave-to{
-        transform: translateX(-250px);
+        transform: translateX(250px);
     }
 
      .mobile-nav-enter-to {

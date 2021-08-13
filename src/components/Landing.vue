@@ -1,7 +1,10 @@
 <template>
 <main>
     <section class="landing">
-        <h1 class="big-text">Gabriel Rojas</h1>
+        <div class="big-text">
+        <h1 class="bitext">Gabriel Rojas</h1>
+        <p class="intro-par">"Design is a funny word. Some people think design means how it looks. But of course, if you dig deeper, it's really how it works" -Steve Jobs</p>
+        </div>
     </section>
 </main>
     <div class="intro">
@@ -31,7 +34,7 @@ export default {
 
         tl.to('.text', {y:'0%', duration:1 , stagger: 0.25})
         // tl.fromTo('.slider', {y:"-50%", x:"50%", width:"0%", height:"0%", }, {y:"50%",x:"-100%", width:"100vw", height:"100vh",  duration: 10, delay: 0.5})
-        tl.to('.intro', {y:"-100%", duration: 1})
+        tl.to('.intro', {y:"-120%", duration: 1})
         tl.fromTo('nav', {opacity:0}, {opacity: 1, duration: 1})
         tl.fromTo('.big-text', {opacity:0}, {opacity: 1, duration: 1},'=-0.5')
     }
@@ -39,30 +42,46 @@ export default {
 </script>
 
 <style>
-
+    @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
     .landing{
-        background: url('../assets/wei-zeng-6KffRaLsClk-unsplash.jpg');
+        position: relative;
+        background: url('../assets/mark-rohan-vN7Cpe2MSf8-unsplash.jpg');
         background-size: cover;
+        background-position: center center;
         display: flex;
         justify-content: center;
         min-height: 100vh;
-        /* height: 100%;
-        width: 100%; */
-    }
-    
+        height: 100vh;
+        }
     .big-text{
+        margin: 3%;
+        font-family: 'Fjalla One', sans-serif;
         position: absolute;
         top:20%;
         left:25%;
-        transform: translate( -50%,-30%);
-        font-size:5rem;
-        color: #fff;
-        text-shadow: 4px 4px black;
+        font-size: 5vw;
+        color: rgb(255, 255, 255);
+        text-shadow: 3px 3px 4px rgb(0, 0, 0);
+        text-align: center;
+        transform: translate( -50%,-25%);
     }
-    @media (max-width: 800){
+    .intro-par{
+        display: flex;
+        justify-content: center;
+        font-size: 2vw;
+        width: 50%;
+        transform: translate( 45%, 0%);
+    }
+    @media (max-width: 800px){
         .big-text {
             top:30%;
             left:50%;
+            font-size: 15vw;
+        }
+        .intro-par{
+            width: 100%;
+            font-size: 5vw;
+            transform: translate(0,0);
         }
 
     }
@@ -95,9 +114,13 @@ export default {
         overflow: visible;
     }
     .intro-text{
+        padding: 80px;
         color: #fff;
         font-size: 3rem;
         text-align: center;
+    }
+    .text{
+        padding: 20px;
     }
     .hide{
         background: black;
