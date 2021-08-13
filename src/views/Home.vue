@@ -1,25 +1,25 @@
 <template>
-  <div class="home">
-    <Landing/>
-    <Iam />
-  </div>
   <section>
+    <div class="home">
+      <Landing class="Landing"/>
+      <Iam class="Iam"/>
+    </div>
 
   </section>
-  </template>
+</template>
 
 <script>
-import Iam from '../components/Iam.vue'
-import Landing from '../components/Landing.vue'
-// @ is an alias to /src
-// import HelloWorld from '@/components/HelloWorld.vue'
+// import gsap from 'gsap'
+import Iam from '../components/Iam.vue';
+import Landing from '../components/Landing.vue';
 
 export default {
   name: 'Home',
   components: {
     Landing,
     Iam
-    
   }
+
+    
 }
 </script>

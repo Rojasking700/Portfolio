@@ -1,5 +1,5 @@
 <template>
-    <div class="container">
+    <div class="iam-container">
         <h1 class="h1-iam">I am
             <span class="typed-text">{{ typeValue }}</span>
             <span class="cursor" :class="{'typing': typeStatus}">&nbsp;</span>
@@ -58,7 +58,7 @@ export default {
 }
 </script>
 <style>
-    .container {
+    .iam-container {
         margin-top: 10vh;
         margin-bottom: 10vh;
         display: flex;

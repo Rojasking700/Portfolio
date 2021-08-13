@@ -36,9 +36,9 @@ export default {
         // tl.fromTo('.slider', {y:"-50%", x:"50%", width:"0%", height:"0%", }, {y:"50%",x:"-100%", width:"100vw", height:"100vh",  duration: 10, delay: 0.5})
         tl.to('.intro', {y:"-120%", duration: 1})
         tl.fromTo('nav', {opacity:0}, {opacity: 1, duration: 1})
-        tl.fromTo('.big-text', {opacity:0}, {opacity: 1, duration: 1},'=-0.5')
+        tl.fromTo('.big-text', {opacity:0}, {opacity: 1, duration: 1},'=-1')
 
-        
+
     }
 }
 </script>
