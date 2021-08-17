@@ -10,8 +10,8 @@
 
 <script>
 // import gsap from 'gsap'
-import Iam from '../components/Iam.vue';
-import Landing from '../components/Landing.vue';
+import Iam from '../components/Home/Iam.vue';
+import Landing from '../components/Home/Landing.vue';
 
 export default {
   name: 'Home',
