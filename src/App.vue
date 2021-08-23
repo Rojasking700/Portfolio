@@ -1,8 +1,10 @@
 <template>
+<main id='app' >
   <div class="app">
     <Nav/>
   </div>
   <router-view/>
+</main>
 </template>
 
 <script>
