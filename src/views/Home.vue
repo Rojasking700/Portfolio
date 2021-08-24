@@ -4,13 +4,41 @@
       <Landing class="Landing"/>
       <Iam class="Iam"/>
 
-      <section class="skills">
-        <Skills  
-          v-for="skill in skills"
-          :key=skill.title
-          :skill="skill"
-
-        />
+      <section class="skills" >
+        <!-- <div class="tech-skills"> -->
+          <h1>Language</h1>
+          <br>
+          <Skills  
+            v-for="skill in skills" v-show="skill.Category==='Language'"
+            :key=skill.title
+            :skill="skill"
+          />
+        <!-- </div> -->
+        
+      </section> 
+      <section class="skills" >
+        <!-- <div class="tech-skills"> -->
+          <h1>Framework</h1>
+          <br>
+          <Skills  
+            v-for="skill in skills" v-show="skill.Category==='Framework'"
+            :key=skill.title
+            :skill="skill"
+          />
+        <!-- </div> -->
+        
+      </section> 
+      <section class="skills" >
+        <!-- <div class="tech-skills"> -->
+          <h1>Technology</h1>
+          <br>
+          <Skills  
+            v-for="skill in skills" v-show="skill.Category==='Technology'"
+            :key=skill.title
+            :skill="skill"
+          />
+        <!-- </div> -->
+        
       </section> 
 
       
@@ -92,6 +120,13 @@ export default {
           Category:'Language',
           bgtext: 'JS',
           src: require('../assets/Skills/Javascript-Logo.png'),
+          detail: 'stuff'
+        },
+        {
+          title: 'Python',
+          Category:'Language',
+          bgtext: 'Python',
+          src: require('../assets/Skills/Python-Logo.png'),
           detail: 'stuff'
         },
         {
