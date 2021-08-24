@@ -91,13 +91,13 @@ export default {
         /* border: 2px solid #000; */
         box-shadow:  0 4px 8px 0 rgba(0,0,0,0.2);
         border-radius: 4px;
-        margin: 5px;
+        margin: 20px;
+        min-width: 300px;
     }
     
     .skill-inner{
-        width: 100%;
         position: relative;
-        padding: 25px;
+        padding: 25px ;
         perspective: 1000px;
         margin: 20px;
     }
@@ -132,11 +132,8 @@ export default {
         filter: drop-shadow(0px 0px 12px rgba(0,0,0,0,0.25));
     }
     .skill-detail{
-        display: flex;
-        justify-content: center;
         align-items: center;
-        /* padding: 25px; */
-        margin: 50px 0px 5px;
+        margin: 50px 0px 0;
     }
     .skill-detail h2 {
         font-size: 24vh;
