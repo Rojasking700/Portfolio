@@ -86,8 +86,8 @@ export default {
 <style>
     .skill{
         /* flex: 0 0 33.3333%; */
-        padding: 25px;
-        /* border: 2px solid #000; */
+        /* padding: 25px; */
+        border: 2px solid #000;
         box-shadow:  0 4px 8px 0 rgba(0,0,0,0.2);
         border-radius: 10px;
         margin: 15px;
@@ -96,7 +96,7 @@ export default {
 
     }
 
-    /* @media () */
+    
     
     .skill-inner{
         position: relative;
@@ -116,7 +116,7 @@ export default {
         perspective: 1000px;
         transform-origin: center;
     }
-    .skill-text-wrap h2{
+    .bg-text{
         font-size: 3vw;
         font-weight: 900;
         opacity: 0.2;
@@ -131,7 +131,7 @@ export default {
         transform-origin: center;
     }
     .skill-image-wrap img {
-        width: 6vw;
+        width: 100px;
         filter: drop-shadow(0px 0px 12px rgba(0,0,0,0,0.25));
     }
     .skill-detail{
@@ -146,5 +146,21 @@ export default {
         font-size: 14px;
         line-height: 1.5;
         font-weight: 300;
+    }
+    @media (max-width: 800px){
+        .skill{
+            min-width: 250px;
+        }
+        .skill-image-wrap img{
+            min-width: 15vw;
+
+        }
+        .bg-text{
+            font-size: 10vw;
+        }
+    }
+    .skill:hover {
+        transform: scale(1.09);
+        transition-duration: 0.15s;
     }
 </style>

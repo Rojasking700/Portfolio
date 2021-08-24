@@ -162,7 +162,7 @@ export default {
   top:0;
   left:0;
   max-width: 70%;
-  padding: 25px;
+  padding: 25px 0;
   margin: auto;
   overflow-x: auto;
   /* align-items: center; */
