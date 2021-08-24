@@ -90,9 +90,9 @@ export default {
         padding: 25px;
         /* border: 2px solid #000; */
         box-shadow:  0 4px 8px 0 rgba(0,0,0,0.2);
-        border-radius: 4px;
-        margin: 20px;
-        min-width: 300px;
+        border-radius: 10px;
+        margin: 15px;
+        min-width: 275px;
     }
     
     .skill-inner{
