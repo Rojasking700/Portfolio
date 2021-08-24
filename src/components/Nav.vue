@@ -184,7 +184,7 @@ export default {
         max-width: 33vw;
         min-width: 150px;
         height: 100%;
-        background-color: #fff;
+        background-color: rgba(250, 250, 250, 95%);
         top:0;
         right:0;
     }

@@ -46,13 +46,10 @@ export default {
 
     computed: {
       StyleText () {
-        //   console.log(this.x,this.y)
         let r = percent(this.x, this.viewportWidth);
         let b = percent(this.y, this.viewportHeight);
         return {
         transform: `translateY(-${b}px) translateX(-${r}px)`
-        //   left: percent(this.x, this.viewportWidth),
-        //   top: percent(this.y, this.viewportHeight)
         }
 
         function percent (value, total) {
@@ -64,8 +61,6 @@ export default {
             let b =percent(this.y, this.viewportHeight);
             return {
                 transform: `translateY(${b}px) translateX(${r}px) translateZ(100px)`
-            // right: percent(this.x, this.viewportWidth),
-            // bottom: percent(this.y, this.viewportHeight)
             }
             function percent (value, total) {
                 return Math.round((value * 20 / total)) 
@@ -93,6 +88,10 @@ export default {
         flex:1;
         width: 100%;
         padding: 25px;
+        /* border: 2px solid #000; */
+        box-shadow:  0 4px 8px 0 rgba(0,0,0,0.2);
+        border-radius: 4px;
+        margin: 5px;
     }
     
     .skill-inner{
@@ -111,16 +110,13 @@ export default {
         right:0;
         bottom:0;
         z-index: 0;
-        /* overflow: hidden; */
         perspective: 1000px;
         transform-origin: center;
     }
     .skill-text-wrap h2{
-        /* color: #FFF; */
         font-size: 3vw;
         font-weight: 900;
         opacity: 0.2;
-        /* transform-origin: center; */
     }
     .skill-image-wrap{
         display: flex;
@@ -138,7 +134,6 @@ export default {
     .skill-detail{
         display: flex;
         justify-content: center;
-        /* color: #FFF; */
         align-items: center;
         /* padding: 25px; */
         margin: 50px 0px 5px;
@@ -146,13 +141,10 @@ export default {
     .skill-detail h2 {
         font-size: 24vh;
         font-weight: 700;
-        /* color: #FFF; */
-        margin-bottom: 15px;
     }
     .skill-detail p {
         font-size: 14px;
         line-height: 1.5;
         font-weight: 300;
-        /* color: #FFF; */
     }
 </style>
