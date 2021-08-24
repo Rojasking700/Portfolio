@@ -85,15 +85,18 @@ export default {
 
 <style>
     .skill{
-        flex:1;
-        width: 100%;
+        /* flex: 0 0 33.3333%; */
         padding: 25px;
         /* border: 2px solid #000; */
         box-shadow:  0 4px 8px 0 rgba(0,0,0,0.2);
         border-radius: 10px;
         margin: 15px;
-        min-width: 275px;
+        min-width: 300px;
+        max-width: 350px;
+
     }
+
+    /* @media () */
     
     .skill-inner{
         position: relative;

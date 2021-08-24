@@ -4,41 +4,31 @@
       <Landing class="Landing"/>
       <Iam class="Iam"/>
 
+      <h1 class="skills-header">Languages:</h1>
       <section class="skills" >
-        <!-- <div class="tech-skills"> -->
-          <h1>Language</h1>
-          <br>
           <Skills  
             v-for="skill in skills" v-show="skill.Category==='Language'"
             :key=skill.title
             :skill="skill"
           />
-        <!-- </div> -->
-        
-      </section> 
+      </section>
+
+      <h1 class="skills-header">Frameworks:</h1>
       <section class="skills" >
-        <!-- <div class="tech-skills"> -->
-          <h1>Framework</h1>
-          <br>
           <Skills  
             v-for="skill in skills" v-show="skill.Category==='Framework'"
             :key=skill.title
             :skill="skill"
           />
-        <!-- </div> -->
-        
       </section> 
+
+      <h1 class="skills-header">Technologies:</h1>
       <section class="skills" >
-        <!-- <div class="tech-skills"> -->
-          <h1>Technology</h1>
-          <br>
           <Skills  
             v-for="skill in skills" v-show="skill.Category==='Technology'"
             :key=skill.title
             :skill="skill"
           />
-        <!-- </div> -->
-        
       </section> 
 
       
@@ -67,10 +57,10 @@ export default {
     return{
       skills: [
         {
-          title: 'Allen-Bradley',
+          title: 'Raspberry Pi',
           Category:'Technology',
-          bgtext: 'PLC',
-          src: require('../assets/Skills/Allen-Bradley-Logo.png'),
+          bgtext: 'RaspPi',
+          src: require('../assets/Skills/Raspberry-pi-Logo.png'),
           detail: 'stuff'
         },
         {
@@ -81,10 +71,38 @@ export default {
           detail: 'stuff'
         },
         {
-          title: 'C#',
+          title: 'Allen-Bradley',
+          Category:'Technology',
+          bgtext: 'PLC',
+          src: require('../assets/Skills/Allen-Bradley-Logo.png'),
+          detail: 'stuff'
+        },
+        {
+          title: 'Python',
           Category:'Language',
-          bgtext: 'C#',
-          src: require('../assets/Skills/C-Sharp-Logo.png'),
+          bgtext: 'Python',
+          src: require('../assets/Skills/Python-Logo.png'),
+          detail: 'stuff'
+        },
+        {
+          title: 'Javascript',
+          Category:'Language',
+          bgtext: 'JS',
+          src: require('../assets/Skills/Javascript-Logo.png'),
+          detail: 'stuff'
+        },
+        {
+          title: 'SQL',
+          Category:'Language',
+          bgtext: 'SQL',
+          src: require('../assets/Skills/SQL-Logo.png'),
+          detail: 'stuff'
+        },
+        {
+          title: 'HTML-5',
+          Category:'Language',
+          bgtext: 'HTML5',
+          src: require('../assets/Skills/HTML5-Logo.png'),
           detail: 'stuff'
         },
         {
@@ -109,54 +127,27 @@ export default {
           detail: 'stuff'
         },
         {
-          title: 'HTML-5',
-          Category:'Language',
-          bgtext: 'HTML5',
-          src: require('../assets/Skills/HTML5-Logo.png'),
-          detail: 'stuff'
-        },
-        {
-          title: 'Javascript',
-          Category:'Language',
-          bgtext: 'JS',
-          src: require('../assets/Skills/Javascript-Logo.png'),
-          detail: 'stuff'
-        },
-        {
-          title: 'Python',
-          Category:'Language',
-          bgtext: 'Python',
-          src: require('../assets/Skills/Python-Logo.png'),
-          detail: 'stuff'
-        },
-        {
-          title: 'Raspberry Pi',
-          Category:'Technology',
-          bgtext: 'RaspPi',
-          src: require('../assets/Skills/Raspberry-pi-Logo.png'),
-          detail: 'stuff'
-        },
-        {
           title: 'React.js',
           Category:'Framework',
           bgtext: 'React',
           src: require('../assets/Skills/React-Logo.png'),
           detail: 'stuff'
         },
-        {
-          title: 'SQL',
-          Category:'Language',
-          bgtext: 'SQL',
-          src: require('../assets/Skills/SQL-Logo.png'),
-          detail: 'stuff'
-        },
+        
         {
           title: 'Vue.js',
           Category:'Framework',
           bgtext: 'VUE',
           src: require('../assets/Skills/Vue-Logo.png'),
           detail: 'stuff'
-        }
+        },
+        {
+          title: 'C#',
+          Category:'Language',
+          bgtext: 'C#',
+          src: require('../assets/Skills/C-Sharp-Logo.png'),
+          detail: 'stuff'
+        },
       ]
     }
   },
@@ -166,10 +157,21 @@ export default {
 <style>
 .skills{
   display:flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
+  justify-content: space-between;
+  top:0;
+  left:0;
   max-width: 70%;
   padding: 25px;
   margin: auto;
+  overflow-x: auto;
+  /* align-items: center; */
+}
+
+.skills-header {
+  display: flex;
+  justify-content: center;
+  font-size: 3vw;
 }
 
 

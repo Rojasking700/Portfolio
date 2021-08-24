@@ -76,7 +76,7 @@ export default {
 <style>
 
     header { 
-        /* background-color: rgba(0,0,0,0.8); */
+        background-color: rgba(0, 0, 0, 0.1);
         z-index: 99;
         width: 100%;
         position: fixed;

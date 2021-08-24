@@ -1,6 +1,6 @@
 <template>
     <div class="iam-container">
-        <h1 class="h1-iam">I am
+        <h1 class="h1-iam">Hello,
             <span class="typed-text">{{ typeValue }}</span>
             <span class="cursor" :class="{'typing': typeStatus}">&nbsp;</span>
         </h1>
@@ -15,7 +15,7 @@ export default {
         return {
             typeValue: '',
             typeStatus: false,
-            typeArray: ['a software developer','these are my skills:'],
+            typeArray: ["I'm a software developer","these are my skills:"],
             typingSpeed: 200,
             erasingSpeed: 100,
             newTextDelay: 2000,
