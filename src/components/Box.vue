@@ -36,6 +36,7 @@
 
     computed: {
       styles () {
+        //   console.log(this.x,this.y)
         return {
           left: percent(this.x, this.viewportWidth),
           top: percent(this.y, this.viewportHeight)

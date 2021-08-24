@@ -9,14 +9,11 @@
           v-for="skill in skills"
           :key=skill.title
           :skill="skill"
-          
+
         />
       </section> 
 
-      <h2>
-        {{ x }}
-        {{ y }}
-      </h2>
+      
 
     </div>
 
@@ -29,7 +26,7 @@ import Iam from '../components/Home/Iam.vue';
 import Landing from '../components/Home/Landing.vue';
 import Skills from '../components/Home/Skills.vue';
 
-import { ref, onMounted, onUnmounted } from "vue";
+// import { ref, onMounted, onUnmounted } from "vue";
 
 export default {
   name: 'Home',
@@ -38,33 +35,13 @@ export default {
     Iam,
     Skills
   },
-  setup() {
-    const useMouse = () => { 
-      const x = ref(0);
-      const y = ref(0);
-      const update = (e) => {
-        x.value = e.pageX;
-        y.value = e.pageY;
-      };
-      onMounted(() => {
-        window.addEventListener("mousemove", update);
-      });
-      onUnmounted(() => {
-        window.addEventListener("mousemove", update);
-      });
-      return {x,y}
-    }
-
-    const { x, y } = useMouse();
-    
-    return {
-      x,
-      y,
-      useMouse
-    };
-  },
+  
   data() {
     return{
+      // x:0,
+      // y:0,
+      // viewportHeight: 1,
+      // viewportWidth: 1,
       skills: [
         {
           title: 'Allen-Bradley',
@@ -153,40 +130,88 @@ export default {
       ]
     }
   },
-  mousemove(e) {
-    const { x, y } = this.useMouse();
+  // created () {
+  //     this.updateViewportSize()
+  //   },
 
-    let mouseX = x;
-    let mouseY = y;
+  //   mounted () {
+  //     document.addEventListener('mousemove', this.onMouseMove)
+  //     window.addEventListener('resize', this.updateViewportSize)
+  //   },
 
-    console.log('hello',x ,y, e);
+  //   unmounted () {
+  //     document.removeEventListener('mousemove', this.onMouseMove)
+  //     window.removeEventListener('resize', this.updateViewportSize)
+  //   },
 
-    let skills = document.querySelectorAll('.skills .skill');
+  //   computed: {
+  //     SkillStyle () {
+  //         console.log(this.x,this.y)
+  //       return {
+  //         left: percent(this.x, this.viewportWidth),
+  //         top: percent(this.y, this.viewportHeight)
+  //       }
 
-    for (let i=0; i<skills.length; i++) {
-      let skill = skills[i];
+  //       function percent (value, total) {
+  //           return Math.round((value * 100 / total)) + '%'
+  //       }
+  //     },
+  //       styles2 () {
+  //           return {
+  //           right: percent(this.x, this.viewportWidth),
+  //           bottom: percent(this.y, this.viewportHeight)
+  //           }
+  //           function percent (value, total) {
+  //               return Math.round((value * 100 / total)) + '%'
+  //           }
+  //       }
+  //   },
 
-      let skill_image = skill.querySelector('.skill-image-wrap');
+  //   methods: {
+  //     onMouseMove (ev) {
+  //       this.x = ev.clientX
+  //       this.y = ev.clientY
+  //     },
 
-      let img_x = mouseX - this.coords(skill_image).x;
-      let img_y = mouseY - this.coords(skill_image).y;
-      skill_image.style.transform = `translateY(-${img_y/20}px) translateX(-${img_x/20}px) translateZ(100px)`;
+  //     updateViewportSize () {
+  //       this.viewportHeight = window.innerHeight
+  //       this.viewportWidth = window.innerWidth
+  //     }
+  //   }
+  // mousemove(e) {
+  //   const { x, y } = this.useMouse();
 
-      let bgtext = skill.querySelector('.bg-text');
-      let bg_x = mouseX - this.coords(bgtext).x;
-      let bg_y = mouseY = this.coords(bgtext).y;
+  //   let mouseX = x;
+  //   let mouseY = y;
 
-      bgtext.style.transform = `translateX(${bg_x/25}px) translateY(${bg_y/25}px)`;
-    }
-  },
-  coords(el){
-    let coords = el.getBoundingClientRect();
+  //   console.log('hello',x ,y, e);
+
+  //   let skills = document.querySelectorAll('.skills .skill');
+
+  //   for (let i=0; i<skills.length; i++) {
+  //     let skill = skills[i];
+
+  //     let skill_image = skill.querySelector('.skill-image-wrap');
+
+  //     let img_x = mouseX - this.coords(skill_image).x;
+  //     let img_y = mouseY - this.coords(skill_image).y;
+  //     skill_image.style.transform = `translateY(-${img_y/20}px) translateX(-${img_x/20}px) translateZ(100px)`;
+
+  //     let bgtext = skill.querySelector('.bg-text');
+  //     let bg_x = mouseX - this.coords(bgtext).x;
+  //     let bg_y = mouseY = this.coords(bgtext).y;
+
+  //     bgtext.style.transform = `translateX(${bg_x/25}px) translateY(${bg_y/25}px)`;
+  //   }
+  // },
+  // coords(el){
+  //   let coords = el.getBoundingClientRect();
     
-    return {
-      x: coords.left / 2,
-      y: coords.top / 2 
-    }
-  }
+  //   return {
+  //     x: coords.left / 2,
+  //     y: coords.top / 2 
+  //   }
+  // }
     
 }
 </script>
