@@ -1,15 +1,11 @@
 <template>
     <div class="skill">
         <div class="skill-inner">
-            <div class="skill-box">
-                <div class="skill-inner-box">
-                    <div class="skill-text-wrap" :style="StyleText">
-                        <h2 class="bg-text">{{ skill.bgtext }}</h2>
-                    </div>
-                    <div class="skill-image-wrap" :style="StyleImage">
-                        <img class="image" :src="skill.src">
-                    </div>
-                </div>
+            <div class="skill-text-wrap" :style="StyleText">
+                <h2 class="bg-text">{{ skill.bgtext }}</h2>
+            </div>
+            <div class="skill-image-wrap" :style="StyleImage">
+                <img class="image" :src="skill.src">
             </div>
             <div class="skill-detail">
                 <h2>{{ skill.tittle }}</h2>
@@ -54,7 +50,7 @@ export default {
         let r = percent(this.x, this.viewportWidth);
         let b = percent(this.y, this.viewportHeight);
         return {
-        transform: `translateY(-${b}px) translateX(-${r}px) translateZ(100px)`
+        transform: `translateY(-${b}px) translateX(-${r}px)`
         //   left: percent(this.x, this.viewportWidth),
         //   top: percent(this.y, this.viewportHeight)
         }
@@ -100,12 +96,16 @@ export default {
     }
     
     .skill-inner{
+        width: 100%;
         position: relative;
         padding: 25px;
         perspective: 1000px;
+        margin: 20px;
     }
     .skill-text-wrap{
         position: absolute;
+        display: flex;
+        justify-content: center;
         top:0;
         left:0;
         right:0;
@@ -113,6 +113,7 @@ export default {
         z-index: 0;
         /* overflow: hidden; */
         perspective: 1000px;
+        transform-origin: center;
     }
     .skill-text-wrap h2{
         /* color: #FFF; */
@@ -122,18 +123,25 @@ export default {
         /* transform-origin: center; */
     }
     .skill-image-wrap{
-        position:absolute;
+        display: flex;
+        justify-content: center;
+        position:relative;
+        top: 0;
+        left: 0;
         z-index: 1;
         transform-origin: center;
     }
-    .skill-image-wrap .image {
+    .skill-image-wrap img {
         width: 6vw;
         filter: drop-shadow(0px 0px 12px rgba(0,0,0,0,0.25));
     }
     .skill-detail{
+        display: flex;
+        justify-content: center;
         /* color: #FFF; */
-        padding: 25px;
-        margin: 0px -25px -25px;
+        align-items: center;
+        /* padding: 25px; */
+        margin: 50px 0px 5px;
     }
     .skill-detail h2 {
         font-size: 24vh;
