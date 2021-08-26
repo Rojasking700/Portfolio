@@ -37,6 +37,8 @@ export default {
         tl.to('.intro', {y:"-120%", duration: 1})
         tl.fromTo('nav', {opacity:0}, {opacity: 1, duration: 1})
         tl.fromTo('.big-text', {opacity:0}, {opacity: 1, duration: 1},'=-1')
+        tl.fromTo('.skills', {opacity:0}, {opacity: 1, duration: 1},'=-1')
+        tl.fromTo('.skills-header', {opacity:0}, {opacity: 1, duration: 1},'=-1')
 
 
     }

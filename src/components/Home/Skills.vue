@@ -8,11 +8,15 @@
                 <img class="image" :src="skill.src">
             </div>
             <div class="skill-detail">
-                <h2>{{ skill.tittle }}</h2>
+                <h3>{{ skill.title }}:</h3>
                 <p>
-                    <!-- {{ skill.detail }} -->
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime aliquid debitis vero ab veniam. Magnam amet ea laboriosam eius quibusdam?
+                    {{ skill.detail }}
+                    <!-- Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime aliquid debitis vero ab veniam. Magnam amet ea laboriosam eius quibusdam? -->
                 </p>
+                
+                <a class="skill-btn" >Learn More</a>
+                <p id="disabled-btn">(button is disabled)</p>
+                
             </div>
         </div>
     </div>
@@ -84,20 +88,19 @@ export default {
 </script>
 
 <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
     .skill{
         /* flex: 0 0 33.3333%; */
         /* padding: 25px; */
-        border: 2px solid #000;
+        /* border: 2px solid #000; */
         box-shadow:  0 4px 8px 0 rgba(0,0,0,0.2);
         border-radius: 10px;
-        margin: 15px;
-        min-width: 300px;
+        margin: 25px;
+        min-width: 350px;
         max-width: 350px;
-
+        transition: 0.25s ease-out;
     }
 
-    
-    
     .skill-inner{
         position: relative;
         padding: 25px ;
@@ -143,10 +146,58 @@ export default {
         font-weight: 700;
     }
     .skill-detail p {
-        font-size: 14px;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1rem;
         line-height: 1.5;
-        font-weight: 300;
+        font-weight: 100;
+        padding: 10px 0;
     }
+    #disabled-btn{
+        padding-top: 7px;
+    }
+    .skill:hover {
+        transform: scale(1.09);
+        box-shadow:  0 8px 16px 0 rgba(0,0,0,0.4);
+        transition: 0.25s ease-out;
+        overflow:auto;
+    }
+
+    .skill-btn {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        width: 60%;
+        /* display: inline-block; */
+        padding: 15px 5px;
+        font-size: 1.3rem;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        color: #fff;
+        background-color: rgb(0, 120, 180);
+        box-shadow: 5px 5px #bbb;
+        border: none;
+        border-radius: 3px;
+        transition: 0.15s ease;
+    }  
+
+    .skill-btn:hover {
+        color: #333;
+        background-color: rgb(61, 216, 255);
+        box-shadow: 5px 5px #666;
+        
+        transition: 0.15s ease;
+    }
+
+
+    .skill-btn:active {
+        color: #000;
+        background-color: #eee;
+        box-shadow: 2px 2px #666;
+        transform: translateY(2px);
+        transition: 0.01s ease;
+    }
+
     @media (max-width: 800px){
         .skill{
             min-width: 250px;
@@ -158,9 +209,13 @@ export default {
         .bg-text{
             font-size: 10vw;
         }
+        .skill-btn{
+            font-size: 1rem;
+            padding: 1rem 1rem;
+            width:70%;
+        }
     }
-    .skill:hover {
-        transform: scale(1.09);
-        transition-duration: 0.15s;
-    }
+
+
+    
 </style>
