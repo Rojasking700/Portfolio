@@ -9,7 +9,7 @@
             </div>
             <ul v-show="!mobile" class="navigation">
                 <li><router-link class="link" :to="{name: 'Home'}">Home</router-link></li>
-                <li><router-link class="link" :to="{name: 'About'}">About</router-link></li>
+                <li><router-link class="link" :to="{name: 'About'}">About Me</router-link></li>
                 <li><router-link class="link" :to="{name: 'Portfolio'}">Portfolio</router-link></li>
                 <li><router-link class="link" :to="{name: 'Contact'}">Contact</router-link></li>
             </ul>
@@ -20,7 +20,7 @@
                 <ul v-show="mobileNav" class="dropdown-nav">
                     <div class="list">
                         <li><router-link class="link" :to="{name: 'Home'}">Home</router-link></li>
-                        <li><router-link class="link" :to="{name: 'About'}">About</router-link></li>
+                        <li><router-link class="link" :to="{name: 'About'}">About Me</router-link></li>
                         <li><router-link class="link" :to="{name: 'Portfolio'}">Portfolio</router-link></li>
                         <li><router-link class="link" :to="{name: 'Contact'}">Contact</router-link></li>
                     </div>
@@ -105,10 +105,12 @@ export default {
         text-decoration: none;
     }
 
-    li{
+    nav li{
+        white-space: nowrap;
+        display: flex;
         text-transform: uppercase;
         padding: 16px;
-        margin-left: 16px;
+        margin: 10px;
     }
 
     .link {

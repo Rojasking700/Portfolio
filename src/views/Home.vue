@@ -133,7 +133,7 @@ export default {
           detail: 'Arduino is a microcontroller board. Along with the raspberry pi i have created various electronic and iot projects. The combination of hardware and software make the learning experience fun.'
         },
         {
-          title: 'Allen-Bradley',
+          title: 'Programmable logic controllers',
           Category:'Technology',
           bgtext: 'PLC',
           src: require('../assets/Skills/Allen-Bradley-Logo.png'),
@@ -172,6 +172,10 @@ export default {
   font-size: 3vw;
   padding-top: 10px
 }
-
+ @media (max-width: 800px) {
+   .skills{
+     max-width: 80%;
+   }
+ }
 
 </style>

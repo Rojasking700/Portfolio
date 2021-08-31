@@ -2,18 +2,41 @@
 <main id='app' >
   <div class="app">
     <Nav/>
+    <router-view/>
+    <Footer
+    :contactInfo="contactInfo"
+    />
   </div>
-  <router-view/>
 </main>
 </template>
 
 <script>
-import Nav from './components/Nav.vue'
+import Nav from './components/Nav.vue';
+import Footer from './components/Footer.vue';
 export default {
   name: "App",
   components: {
     Nav,
-  }
+    Footer
+  },
+  data() {
+        return{
+            contactInfo: [
+                {
+                    'method': 'Email',
+                    'contact': 'grojaspiano@gmail.com'
+                },
+                {
+                    'method': 'Phone',
+                    'contact': '262-909-5892'
+                },
+                {
+                    'method': 'Location',
+                    'contact': 'Kenosha, WI'
+                }
+            ]
+        }
+    }
 };
 </script>
 
@@ -24,5 +47,10 @@ export default {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+  }
+  main{
+    display:flex;
+    flex-direction: column;
+    min-height: 100vh;
   }
 </style>

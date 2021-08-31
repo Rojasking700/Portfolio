@@ -194,13 +194,13 @@ export default {
         color: #000;
         background-color: #eee;
         box-shadow: 2px 2px #666;
-        transform: translateY(2px);
+        transform: translateY(3px);
         transition: 0.01s ease;
     }
 
     @media (max-width: 800px){
         .skill{
-            min-width: 250px;
+            min-width: 300px;
         }
         .skill-image-wrap img{
             min-width: 15vw;
