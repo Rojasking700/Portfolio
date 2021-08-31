@@ -32,8 +32,8 @@
                     <!-- <a href="#" class="dribbble" title="Join us on Dribbble"><i class="fa fa-dribbble" aria-hidden="true"></i></a> -->
                     <!-- <a href="#" class="vimeo" title="Join us on Vimeo"><i class="fa fa-vimeo" aria-hidden="true"></i></a> -->
                     <!-- <a href="#" class="pinterest" title="Join us on Pinterest"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a> -->
-                    <a href="#" class="github" title="Join us on Github"><i class="fa fa-github" aria-hidden="true"></i></a>
-                    <a href="#" class="in" title="Join us on Linked In"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                    <a href="https://github.com/Rojasking700" class="github" title="Join us on Github"><i class="fa fa-github" aria-hidden="true"></i></a>
+                    <a href="https://www.linkedin.com/in/gabriel-rojas-81ab90199/" class="in" title="Join us on Linked In"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
                     </div>
                 </div>
             </div>
@@ -55,6 +55,7 @@ export default {
         width: 100%;
         display: flex;
         justify-content: center;
+        margin-top:auto;
     }
     .footer{
         display: flex;
@@ -69,12 +70,10 @@ export default {
     .lets-talk{
         max-width: 40%;
     }
-    .lets-talk h1{
-        padding-bottom: 5px;
-    }
     .lets-talk p{
         font-family: 'Montserrat', sans-serif;
         font-weight: 900;
+        padding: 15px 0;
     }
     .footer-contact{
         max-width:100%;
@@ -188,4 +187,20 @@ export default {
   transform: scale(1.2) rotate(45deg);
 }
 
+@media (max-width: 800px){
+    .footer{
+        flex-direction: column;
+    }
+    .lets-talk{
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
+        padding-bottom: 20px;
+    }
+    .footer-btn{
+        width: 50%;
+    }
+}
 </style>
