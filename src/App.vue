@@ -51,6 +51,8 @@ export default {
   main{
     display:flex;
     flex-direction: column;
+    position: relative;
     min-height: 100vh;
+    padding-bottom: 300px;
   }
 </style>

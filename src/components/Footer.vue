@@ -43,9 +43,13 @@
 </template>
 
 <script>
+// import VueClipboard from 'vue-clipboard2'
 export default {
     name: 'contactInfo',
     props:['contactInfo'],
+    methods: {
+        
+    }
 }
 </script>
 
@@ -56,13 +60,14 @@ export default {
         display: flex;
         justify-content: center;
         margin-top:auto;
+        position: absolute;
+        bottom: 0;
     }
     .footer{
         display: flex;
         justify-content: space-around;
         flex-direction: row;
         color: #fff;
-        /* position: absolute; */
         width: 80%;
         padding: 40px 20px;
         align-items: center;
@@ -101,7 +106,7 @@ export default {
         position: relative;
         display: flex;
         justify-content: center;
-        width: 30%;
+        width: 150px;
         /* display: inline-block; */
         padding: 15px 5px;
         font-size: 1.3rem;
@@ -199,8 +204,6 @@ export default {
         align-items: center;
         padding-bottom: 20px;
     }
-    .footer-btn{
-        width: 50%;
-    }
+    
 }
 </style>
