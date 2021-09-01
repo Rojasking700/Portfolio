@@ -77,7 +77,7 @@ export default {
         font-size: 2vw;
         width: 50%;
         transform: translate( 50%, 0%);
-        text-shadow:2px 2px 1px rgb(0, 0, 0);
+        text-shadow:3px 3px 4px rgb(0, 0, 0);
     }
     @media (max-width: 800px){
         .big-text {
@@ -90,6 +90,7 @@ export default {
             width: 100%;
             font-size: 5vw;
             transform: translate(0,0);
+            text-shadow:2px 2px 1px rgb(0, 0, 0);
         }
 
     }

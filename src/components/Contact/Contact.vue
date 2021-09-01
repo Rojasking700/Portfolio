@@ -3,7 +3,7 @@
     <section class="contact-landing">
         <div class="contact-big-text">
         <h1 class="contact-bitext">Contact me</h1>
-        <p class="contact-intro-par">"Design is a funny word. Some people think design means how it looks. But of course, if you dig deeper, it's really how it works" -Steve Jobs</p>
+        <!-- <p class="contact-intro-par">"Design is a funny word. Some people think design means how it looks. But of course, if you dig deeper, it's really how it works" -Steve Jobs</p> -->
         </div>
     </section>
 </main>
@@ -61,12 +61,12 @@ export default {
         font-family: 'Fjalla One', sans-serif;
         position: absolute;
         top:10%;
-        left:25%;
+        left:45%;
         font-size: 4rem;
         color: rgb(255, 255, 255);
         text-shadow:4px 6px 8px rgb(0, 0, 0);
         text-align: center;
-        transform: translate( -50%,-25%);
+        transform: translate( -45%,-25%);
     }
     .contact-intro-par{
         display: flex;
@@ -77,9 +77,11 @@ export default {
     }
     @media (max-width: 800px){
         .contact-big-text {
-            top:30%;
+            top:15%;
             left:50%;
-            font-size: 15vw;
+            font-size: 12vw;
+            width: 80%;
+            transform: translate( -50%,-25%);
         }
         .contact-intro-par{
             width: 100%;

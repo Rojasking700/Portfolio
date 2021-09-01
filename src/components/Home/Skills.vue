@@ -149,7 +149,7 @@ export default {
         font-family: 'Montserrat', sans-serif;
         font-size: 1rem;
         line-height: 1.5;
-        font-weight: 100;
+        font-weight: medium;
         padding: 10px 0;
     }
     #disabled-btn{
