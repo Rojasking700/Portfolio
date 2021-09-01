@@ -176,6 +176,9 @@ export default {
    .skills{
      max-width: 80%;
    }
+   .skills-header{
+     font-size: 2rem;
+   }
  }
 
 </style>

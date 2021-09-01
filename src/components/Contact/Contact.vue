@@ -1,22 +1,22 @@
 <template>
-<main>
-    <section class="landing">
-        <div class="big-text">
-        <h1 class="bitext">Gabriel Rojas</h1>
-        <p class="intro-par">"Design is a funny word. Some people think design means how it looks. But of course, if you dig deeper, it's really how it works" -Steve Jobs</p>
+<main class="contact-main">
+    <section class="contact-landing">
+        <div class="contact-big-text">
+        <h1 class="contact-bitext">Contact me</h1>
+        <p class="contact-intro-par">"Design is a funny word. Some people think design means how it looks. But of course, if you dig deeper, it's really how it works" -Steve Jobs</p>
         </div>
     </section>
 </main>
-    <div class="intro">
-        <div class="intro-text">
-            <h1 class="hide">
-                <span class="text">Dream</span>
+    <div class="contact-intro">
+        <div class="contact-intro-text">
+            <h1 class="contact-hide">
+                <span class="contact-text">Dream</span>
             </h1>
-            <h1 class="hide">
-                <span class="text">Create</span>
+            <h1 class="contact-hide">
+                <span class="contact-text">Create</span>
             </h1>
-            <h1 class="hide">
-                <span class="text">Inovate</span>    
+            <h1 class="contact-hide">
+                <span class="contact-text">Inovate</span>    
             </h1>
         </div>
     </div>
@@ -30,16 +30,13 @@ import gsap from 'gsap'
 
 export default {
     mounted() {
-        const tl = gsap.timeline({defaults: {ease: 'power1.out'} })
+        const C1 = gsap.timeline({defaults: {ease: 'power1.out'} })
 
-        tl.to('.text', {y:'0%', duration:1 , stagger: 0.25})
-        // tl.fromTo('.slider', {y:"-50%", x:"50%", width:"0%", height:"0%", }, {y:"50%",x:"-100%", width:"100vw", height:"100vh",  duration: 10, delay: 0.5})
-        tl.to('.intro', {y:"-120%", duration: 1})
-        tl.fromTo('nav', {opacity:0}, {opacity: 1, duration: 0.75},'=-0.75')
-        tl.fromTo('.big-text', {opacity:0}, {opacity: 1, duration: 0.75},'=-0.75')
-        tl.fromTo('.skills', {opacity:0}, {opacity: 1, duration: 0.75},'=-0.75')
-        tl.fromTo('.skills-header', {opacity:0}, {opacity: 0.75, duration: 0.75},'=-0.75')
-        tl.fromTo('.footer', {opacity:0}, {opacity: 1, duration: 0.75},'=-0.75')
+        C1.to('.contact-text', {y:'0%', duration:1 , stagger: 0.25})
+        C1.to('.contact-intro', {y:"-120%", duration: 1})
+        C1.fromTo('nav', {opacity:0}, {opacity: 1, duration: 0.75},'=-0.75')
+        C1.fromTo('.contact-big-text', {opacity:0}, {opacity: 1, duration: 0.75},'=-0.75')
+        C1.fromTo('.footer', {opacity:0}, {opacity: 1, duration: 0.75},'=-0.75')
 
 
     }
@@ -48,10 +45,10 @@ export default {
 
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
-
-    .landing{
+    /* src\assets\pavan-trikutam-71CjSSB83Wo-unsplash.jpg */
+    .contact-landing{
         position: relative;
-        background: url('../../assets/mark-rohan-vN7Cpe2MSf8-unsplash.jpg');
+        background: url('../../assets/pavan-trikutam-71CjSSB83Wo-unsplash.jpg');
         background-size: cover;
         background-position: center center;
         display: flex;
@@ -59,41 +56,39 @@ export default {
         min-height: 100vh;
         height: 100vh;
         }
-    .big-text{
+    .contact-big-text{
         margin: 3%;
         font-family: 'Fjalla One', sans-serif;
         position: absolute;
-        top:20%;
-        left:20%;
-        font-size: 5vw;
+        top:10%;
+        left:25%;
+        font-size: 4rem;
         color: rgb(255, 255, 255);
         text-shadow:4px 6px 8px rgb(0, 0, 0);
         text-align: center;
         transform: translate( -50%,-25%);
     }
-    .intro-par{
+    .contact-intro-par{
         display: flex;
         justify-content: center;
-        font-size: 2vw;
+        font-size: 1vw;
         width: 50%;
-        transform: translate( 50%, 0%);
-        text-shadow:2px 2px 1px rgb(0, 0, 0);
+        transform: translate( 45%, 0%);
     }
     @media (max-width: 800px){
-        .big-text {
-            top:15%;
+        .contact-big-text {
+            top:30%;
             left:50%;
-            font-size: 12vw;
-            width: 80%;
+            font-size: 15vw;
         }
-        .intro-par{
+        .contact-intro-par{
             width: 100%;
             font-size: 5vw;
             transform: translate(0,0);
         }
 
     }
-    .intro{
+    .contact-intro{
         background: black;
         position: fixed;
         top:0;
@@ -104,7 +99,7 @@ export default {
         justify-content: center;
         align-items: center;
     }
-    .slider {
+    .contact-slider {
         /* margin:50%; */
         /* padding: 10%; */
         position: absolute;
@@ -121,20 +116,20 @@ export default {
         transform: translateX(100%); */
         overflow: visible;
     }
-    .intro-text{
+    .contact-intro-text{
         padding: 80px;
         color: #fff;
         font-size: 3rem;
         text-align: center;
     }
-    .text{
+    .contact-text{
         padding: 20px;
     }
-    .hide{
+    .contact-hide{
         background: black;
         overflow: hidden;
     }
-    .hide span{
+    .contact-hide span{
         /* padding: 1; */
         transform: translateY(100%);
         display: inline-block;

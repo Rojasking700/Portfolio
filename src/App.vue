@@ -48,11 +48,16 @@ export default {
     margin: 0;
     box-sizing: border-box;
   }
-  main{
+  .app{
     display:flex;
     flex-direction: column;
     position: relative;
     min-height: 100vh;
-    padding-bottom: 300px;
+    padding-bottom: 30vh;
+  }
+  @media (max-width: 800px){
+    .app{
+      padding-bottom: 60vh;
+    }
   }
 </style>

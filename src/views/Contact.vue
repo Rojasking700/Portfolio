@@ -1,13 +1,14 @@
 <template>
-    <h1>this is the contact page</h1>
-    <!-- <Box/> -->
+    <Contact/>
 </template>
 
 <script>
 // import Box from '../components/Box.vue'
+import Contact from '../components/Contact/Contact.vue'
 
 export default {
     components: {
+        Contact,
         // Box
     },
     

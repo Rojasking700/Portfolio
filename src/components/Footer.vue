@@ -62,6 +62,7 @@ export default {
         margin-top:auto;
         position: absolute;
         bottom: 0;
+        height: 30vh;
     }
     .footer{
         display: flex;
@@ -193,6 +194,10 @@ export default {
 }
 
 @media (max-width: 800px){
+    footer{
+        height: 60vh;
+
+    }
     .footer{
         flex-direction: column;
     }
