@@ -162,7 +162,7 @@ export default {
         flex-wrap: wrap;
         top:40%;
     }
-    @media (max-width: 1200px){
+    @media (max-width: 1220px){
         .contactcards{
             flex-direction: column;
             justify-content: none;
