@@ -53,6 +53,7 @@ export default {
     flex-direction: column;
     position: relative;
     min-height: 100vh;
+    /* margin-bottom: 30vh; */
     padding-bottom: 30vh;
   }
   @media (max-width: 800px){

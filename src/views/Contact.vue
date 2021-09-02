@@ -153,8 +153,13 @@ export default {
         display: inline-block;
     }
     .contactcards{
+        position: absolute;
+        width: 80%;
+        height: 50%;
         display:flex;
-        position: relative;
-        top:50%;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        top:30%;
     }
 </style>
