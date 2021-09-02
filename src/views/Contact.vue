@@ -160,6 +160,14 @@ export default {
         justify-content: space-between;
         align-items: center;
         flex-wrap: wrap;
-        top:30%;
+        top:40%;
     }
+    @media (max-width: 1200px){
+        .contactcards{
+            flex-direction: column;
+            justify-content: none;
+            top:40%;
+        }
+    }
+    
 </style>

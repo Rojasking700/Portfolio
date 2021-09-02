@@ -86,4 +86,11 @@ export default {
     text-shadow:2px 2px 0px rgb(100, 100, 100);
     transition: 0.25s ease-out;
 }
+@media (max-width: 1200px){
+        .contact-card{
+            /* min-height: 100px; */
+            /* max-height: 100px; */
+            height: 150px;
+        }
+    }
 </style>
