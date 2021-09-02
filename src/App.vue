@@ -2,7 +2,7 @@
 <main id='app' >
   <div class="app">
     <Nav/>
-    <router-view/>
+    <router-view :contactInfo="contactInfo"/>
     <Footer
     :contactInfo="contactInfo"
     />

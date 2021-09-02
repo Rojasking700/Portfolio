@@ -157,8 +157,8 @@ export default {
     }
     .skill:hover {
         transform: scale(1.09);
-        box-shadow:  0 8px 16px 0 rgba(0,0,0,0.4);
         transition: 0.25s ease-out;
+        box-shadow:  0 8px 16px 0 rgba(0,0,0,0.4);
         overflow:auto;
     }
 

@@ -82,7 +82,7 @@ export default {
         position: fixed;
         transition: .5s ease all;
         color: #fff;
-        text-shadow: 2px 2px black;
+        text-shadow: 2px 2px 2px black;
     }
 
     nav {
@@ -122,6 +122,9 @@ export default {
     .link:hover{
         color: #00afea;
         border-color: #00afea;
+        transform: scale(1.09);
+        text-shadow: 1px 1px 1px black;
+        transition: 0.5s ease-out;
     }
 
     .branding{
