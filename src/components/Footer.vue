@@ -8,18 +8,15 @@
         </div>
         <div class="footer-contact">
             <div class="footer-lists">
-                <ul class="footer-span">
+                <ul class="footer-span" id="footer-left-contact">
                     <li v-for="contact in contactInfo" :key="contact">
                         <h3>{{ contact.method }}</h3>
                     </li>
                 </ul>
-                <ul class="footer-span">
+                <ul class="footer-span" >
                     <li v-for="contact in contactInfo" :key="contact">
                         <h3 title="copy">{{ contact.contact }}</h3>
                     </li>
-                </ul>
-                <ul>
-                    <li></li>
                 </ul>
             </div>
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -99,6 +96,10 @@ export default {
         justify-content: space-between;
         padding: 20px;
     }
+    #footer-left-contact{
+        padding-left: 0;
+    }
+    
     .footer-span li{
         padding: 5px 0;
     }
@@ -208,6 +209,9 @@ export default {
         /* justify-content: center; */
         align-items: center;
         padding-bottom: 20px;
+    }
+    .footer-span{
+        padding:5px;
     }
     
 }

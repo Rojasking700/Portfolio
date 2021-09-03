@@ -4,32 +4,34 @@
         <div class="about-big-text">
           <div class="experience">
             <div class="about-bitext">
-              <h1 >About me</h1>
+              <h1 >About</h1>
               <h2>I want to make a difference in the world!</h2>
-              <p class="about-intro-par">I want to help small businesses like yours grow and revolutionize the world. 
+              <p>I want to help small businesses like yours grow and revolutionize the world. 
                 I too have big dreams of innovating the world we live in. Through web development I can help spread 
                 your message and flourish your business to get it where you want to be.</p>
             </div>
             <div class="about-bitext">
               <h1>Experience</h1>
               <h2>How I got to where I am today</h2>
-              <p class="about-intro-par">I want to help small businesses like yours grow and revolutionize the world. 
-                I too have big dreams of innovating the world we live in. Through web development I can help spread 
-                your message and flourish your business to get it where you want to be.</p>
+              <p>I have been coding for a few years now but my most professional experience comes from Coding Temple. 
+                This is where I learned Full-stack web development and data science. You can learn more about these skills on my home page. 
+                Before Coding Temple I attended Gateway Technical college where I learned C# and .net. Prior to that I was mostly self 
+                taught learning how to code on a raspberry pi making IOT projects in python. I have also worked in the manufacturing 
+                industry where I was a maintenance mechanic. Here I diagnosed mechanical, electrical, and software issues on industrial machines.</p>
             </div>
           </div>
           <div class="experience">
               <div class="about-bitext">
                 <h1 >A right</h1>
                 <h2>I want to make a difference in the world!</h2>
-                <p class="about-intro-par">I want to help small businesses like yours grow and revolutionize the world. 
+                <p>I want to help small businesses like yours grow and revolutionize the world. 
                   I too have big dreams of innovating the world we live in. Through web development I can help spread 
                   your message and flourish your business to get it where you want to be.</p>
               </div>
               <div class="about-bitext">
                 <h1>E Right</h1>
                 <h2>I want to make a difference in the world!</h2>
-                <p class="about-intro-par">I want to help small businesses like yours grow and revolutionize the world. 
+                <p>I want to help small businesses like yours grow and revolutionize the world. 
                   I too have big dreams of innovating the world we live in. Through web development I can help spread 
                   your message and flourish your business to get it where you want to be.</p>
               </div>

@@ -132,7 +132,7 @@ export default {
         display: flex;
         align-items: center;
         flex-direction: row;
-        width: 100%;
+        /* width: 100%; */
         font-size: 2vw;
         text-decoration: none;
     }
@@ -163,9 +163,9 @@ export default {
     .icon {
         display: flex;
         align-items: center;
-        position: absolute;
+        position: relative;
         top: 0;
-        right: 24px;
+        /* right: 24px; */
         height: 100%;
         z-index: 101;
     }
