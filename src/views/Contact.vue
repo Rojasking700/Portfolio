@@ -4,7 +4,7 @@
     <section class="contact-landing">
         <div class="contact-big-text">
         <h1 class="contact-bitext">Contact me</h1>
-        <p class="contact-intro-par">Please contact me if you have any questions about me or my experience, any questions regarding how this site was made, any suggestions you may have to make the site better or if you find any bugs that need fixing. I am available at any time for a phone call or email. I would love to get in touch with you and learn more about you as well!</p>
+        <p class="contact-intro-par">Please contact me if you have any questions about me or my experience, any questions regarding how this site was made, any suggestions you may have to make the site better or if you find any bugs that need fixing. I am available at any time for a phone call or email. I would love to get in touch with you and learn more about you or your company as well!</p>
         </div>
         <div class="contactcards">
         <ContactCards 

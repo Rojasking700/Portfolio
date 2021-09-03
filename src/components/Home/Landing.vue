@@ -79,8 +79,9 @@ export default {
     }
     @media (max-width: 800px){
         .big-text {
-            top:15%;
-            left:50%;
+            top:10%;
+            left:45%;
+            transform: translate( -50%,-20%);
             font-size: 12vw;
             width: 80%;
         }

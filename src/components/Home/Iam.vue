@@ -15,9 +15,9 @@ export default {
         return {
             typeValue: '',
             typeStatus: false,
-            typeArray: ["I design websites for startups","these are my skills:"],
+            typeArray: ["I develop websites for startups","these are my skills:"],
             typingSpeed: 200,
-            erasingSpeed: 100,
+            erasingSpeed: 200,
             newTextDelay: 2000,
             typeArrayIndex: 0,
             charIndex: 0
