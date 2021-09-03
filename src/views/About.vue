@@ -2,14 +2,39 @@
 <main>
     <section class="about-landing">
         <div class="about-big-text">
-          <div class="about-bitext">
-            <h1 >About me</h1>
-            <h2>I want to make a difference in the world!</h2>
-            <p class="about-intro-par">I want to help small businesses like yours grow and revolutionize the world. 
-              I too have big dreams of innovating the world we live in. Through web development I can help spread 
-              your message and flourish your business to get it where you want to be.</p>
+          <div class="experience">
+            <div class="about-bitext">
+              <h1 >About me</h1>
+              <h2>I want to make a difference in the world!</h2>
+              <p class="about-intro-par">I want to help small businesses like yours grow and revolutionize the world. 
+                I too have big dreams of innovating the world we live in. Through web development I can help spread 
+                your message and flourish your business to get it where you want to be.</p>
+            </div>
+            <div class="about-bitext">
+              <h1>Experience</h1>
+              <h2>How I got to where I am today</h2>
+              <p class="about-intro-par">I want to help small businesses like yours grow and revolutionize the world. 
+                I too have big dreams of innovating the world we live in. Through web development I can help spread 
+                your message and flourish your business to get it where you want to be.</p>
+            </div>
           </div>
-        </div>
+          <div class="experience">
+              <div class="about-bitext">
+                <h1 >A right</h1>
+                <h2>I want to make a difference in the world!</h2>
+                <p class="about-intro-par">I want to help small businesses like yours grow and revolutionize the world. 
+                  I too have big dreams of innovating the world we live in. Through web development I can help spread 
+                  your message and flourish your business to get it where you want to be.</p>
+              </div>
+              <div class="about-bitext">
+                <h1>E Right</h1>
+                <h2>I want to make a difference in the world!</h2>
+                <p class="about-intro-par">I want to help small businesses like yours grow and revolutionize the world. 
+                  I too have big dreams of innovating the world we live in. Through web development I can help spread 
+                  your message and flourish your business to get it where you want to be.</p>
+              </div>
+            </div>
+          </div>
     </section>
 </main>
     <div class="intro">
@@ -73,27 +98,43 @@ export default {
         background: rgba(0,0,0,0.25);
         width: 100%;
         height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .experience{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      width: 40%;
     }
     .about-bitext{
-      position: absolute;
-      top:20%;
-      left:15%;
-      transform: translate( -40%,-20%);
+      padding: 0.5rem;
+      /* width:80%; */
+      /* transform: translate( -5%,5%); */
+      display:flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
     .about-big-text h1 {
-      font-size: 4vw;
+      font-size: 4rem;
+      width:90%;
     }
     .about-big-text h2 {
-      font-size: 2vw;
+      font-size: 2rem;
+      width:90%;
     }
-    .about-intro-par{
+    .about-bitext p{
+        position: relative;
         display: flex;
         justify-content: center;
+        align-items: center;
         font-family: 'Montserrat', sans-serif;
         font-weight: 900;
-        font-size: 1.5vw;
-        width: 50%;
-        transform: translate( 50%, 0%);
+        font-size: 1.25rem;
+        /* width: 40%; */
+        /* transform: translate( 0%, 0%); */
         text-shadow:3px 3px 2px rgb(0, 0, 0);
     }
     @media (max-width: 800px){
@@ -112,7 +153,7 @@ export default {
       .about-bitext h2 {
         font-size: 5vw;
       }
-        .about-intro-par{
+        .about-bitext p {
             width: 100%;
             font-size: 4vw;
             transform: translate(0,0);
