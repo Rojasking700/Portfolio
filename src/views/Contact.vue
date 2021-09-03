@@ -48,7 +48,7 @@ export default {
         const C1 = gsap.timeline({defaults: {ease: 'power1.out'} })
 
         C1.to('.contact-text', {y:'0%', duration:1 , stagger: 0.25})
-        C1.to('.contact-intro', {y:"-120%", duration: 1})
+        C1.to('.contact-intro', {y:"-140%", duration: 1})
         C1.fromTo('nav', {opacity:0}, {opacity: 1, duration: 0.75},'=-0.75')
         C1.fromTo('.contact-big-text', {opacity:0}, {opacity: 1, duration: 0.75},'=-0.75')
         C1.fromTo('.footer', {opacity:0}, {opacity: 1, duration: 0.75},'=-0.75')

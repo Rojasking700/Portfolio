@@ -54,11 +54,11 @@ export default {
     position: relative;
     min-height: 100vh;
     /* margin-bottom: 30vh; */
-    padding-bottom: 30vh;
+    padding-bottom: 20rem;
   }
   @media (max-width: 800px){
     .app{
-      padding-bottom: 60vh;
+      padding-bottom: 40rem;
     }
   }
 </style>

@@ -59,7 +59,7 @@ export default {
         margin-top:auto;
         position: absolute;
         bottom: 0;
-        height: 30vh;
+        height: 20rem;
     }
     .footer{
         display: flex;
@@ -196,11 +196,12 @@ export default {
 
 @media (max-width: 800px){
     footer{
-        height: 60vh;
+        height: 40rem;
 
     }
     .footer{
         flex-direction: column;
+        width: 90%;
     }
     .lets-talk{
         max-width: 100%;

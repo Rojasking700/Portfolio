@@ -165,7 +165,7 @@ export default {
         align-items: center;
         position: relative;
         top: 0;
-        /* right: 24px; */
+        right: 24px;
         height: 100%;
         z-index: 101;
     }

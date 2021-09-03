@@ -1,7 +1,7 @@
 <template>
 <div class="contact-card" type="button" @click="copy">
     <h1>{{ contact.method }}:</h1>
-    <h1>{{ contact.contact }}</h1>
+    <h2>{{ contact.contact }}</h2>
 
 </div>
 </template>
@@ -55,8 +55,9 @@ export default {
     /* margin: 20px; */
     /* padding: 20px; */
     color: #fff;
-    min-width: 320px;
-    max-width: 320px;
+    /* min-width: 320px;
+    max-width: 320px; */
+    width:320px;
     height: 250px;
     background: rgba(0,0,0,0.2);
     border: 15px solid rgba(255,255,255,0.5);
@@ -86,11 +87,24 @@ export default {
     text-shadow:2px 2px 0px rgb(100, 100, 100);
     transition: 0.25s ease-out;
 }
-@media (max-width: 1200px){
-        .contact-card{
-            /* min-height: 100px; */
-            /* max-height: 100px; */
-            height: 150px;
+.contact-card:hover h2{
+    text-shadow:2px 2px 0px rgb(100, 100, 100);
+    transition: 0.25s ease-out;
+}
+@media (max-width: 1220px){
+    .contact-card{
+        height: 150px;
         }
     }
+@media (max-width: 400px){
+    .contact-card{
+        width: 250px;
+        
+    transition: 0.25s ease-out;
+    }
+    .contact-card h2{
+    font-size: 1.3em;
+    transition: 0.25s ease-out;
+}
+}
 </style>
