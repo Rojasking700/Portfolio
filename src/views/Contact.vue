@@ -78,7 +78,7 @@ export default {
     .contact-big-text{
         font-family: 'Fjalla One', sans-serif;
         position: absolute;
-        top:20%;
+        top:30%;
         left:50%;
         font-size: 4vw;
         color: rgb(255, 255, 255);
@@ -160,7 +160,7 @@ export default {
         justify-content: space-between;
         align-items: center;
         flex-wrap: wrap;
-        top:40%;
+        top:50%;
     }
     @media (max-width: 1220px){
         .contactcards{

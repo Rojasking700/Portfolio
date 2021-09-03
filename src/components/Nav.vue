@@ -10,7 +10,7 @@
             <ul v-show="!mobile" class="navigation">
                 <li><router-link class="link" :to="{name: 'Home'}">Home</router-link></li>
                 <li><router-link class="link" :to="{name: 'About'}">About Me</router-link></li>
-                <li><router-link class="link" :to="{name: 'Portfolio'}">Portfolio</router-link></li>
+                <!-- <li><router-link class="link" :to="{name: 'Portfolio'}">Portfolio</router-link></li> -->
                 <li><router-link class="link" :to="{name: 'Contact'}">Contact</router-link></li>
             </ul>
             <div class="icon">
@@ -21,7 +21,7 @@
                     <div class="list">
                         <li><router-link class="link" :to="{name: 'Home'}">Home</router-link></li>
                         <li><router-link class="link" :to="{name: 'About'}">About Me</router-link></li>
-                        <li><router-link class="link" :to="{name: 'Portfolio'}">Portfolio</router-link></li>
+                        <!-- <li><router-link class="link" :to="{name: 'Portfolio'}">Portfolio</router-link></li> -->
                         <li><router-link class="link" :to="{name: 'Contact'}">Contact</router-link></li>
                     </div>
                 </ul>

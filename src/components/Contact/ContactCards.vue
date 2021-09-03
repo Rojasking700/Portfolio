@@ -57,7 +57,7 @@ export default {
     color: #fff;
     min-width: 320px;
     max-width: 320px;
-    height: 300px;
+    height: 250px;
     background: rgba(0,0,0,0.2);
     border: 15px solid rgba(255,255,255,0.5);
     border-bottom: 15px solid rgba(0,0,0,0.5);

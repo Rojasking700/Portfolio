@@ -15,7 +15,7 @@ export default {
         return {
             typeValue: '',
             typeStatus: false,
-            typeArray: ["I'm a software developer","these are my skills:"],
+            typeArray: ["I design websites for startups","these are my skills:"],
             typingSpeed: 200,
             erasingSpeed: 100,
             newTextDelay: 2000,
