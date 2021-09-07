@@ -62,9 +62,9 @@ export default {
         const tl = gsap.timeline({defaults: {ease: 'power1.out'} })
 
         tl.to('.text', {y:'0%', duration:1 , stagger: 0.25})
-        tl.to('.intro', {y:"-140%", duration: 1.5})
+        tl.to('.intro', {y:"-140%", duration: 1.25})
         tl.fromTo('nav', {opacity:0}, {opacity: 1, duration: 0.75},'=-0.75')
-        tl.fromTo('.about-big-text', {opacity:0}, {opacity: 1, duration: 0.75},'=-0.75')
+        tl.fromTo('.about-bitext', {opacity:0}, {opacity: 1, duration: 1, stagger: 0.3},'=-0.75')
         tl.fromTo('.footer', {opacity:0}, {opacity: 1, duration: 0.75},'=-0.75')
 
 
