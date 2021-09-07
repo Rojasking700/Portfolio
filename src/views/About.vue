@@ -21,10 +21,12 @@
             </div>
               <div class="about-bitext">
                 <h1>Me</h1>
+                <h2>Who am I?</h2>
                 <!-- <img src="https://via.placeholder.com/400x400" alt=""> -->
-                <p>I want to help small businesses like yours grow and revolutionize the world. 
-                  I too have big dreams of innovating the world we live in. Through web development I can help spread 
-                  your message and flourish your business to get it where you want to be.</p>
+                <p>My name is Gabriel Rojas, I grew up in the town of Kenosha, WI. I am a big car enthusiast that like to take rather basic cars 
+                  and do many pointless modifications to make them look better. There is nothing I care more about than having something look good. 
+                  Everything I do I make sure is done right and looks presentable. I have this attitude towards everything I do whether its modifying cars 
+                  or creating websites. </p>
               </div>
           <!--<div class="about-bitext">
                 <h1 >A right</h1>
@@ -109,7 +111,7 @@ export default {
       align-items: center;
       width: 80%;
       height: 100%;
-      margin: 10% 0;
+      margin: 6rem 0;
     }
     .about-bitext{
       padding: 1rem;
