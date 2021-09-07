@@ -93,7 +93,6 @@ export default {
         padding: 10px;
         transition: .5s ease all;
         width: 100%;
-        font-size: 2vw;
         margin: 0 auto;
     }
     
@@ -114,7 +113,7 @@ export default {
     }
 
     .link {
-        font-size: 1vw;
+        font-size: 1.5rem;
         transition: .5s ease all;
         padding-bottom: 4px;
         border-bottom: 1px solid transparent;
@@ -133,13 +132,13 @@ export default {
         align-items: center;
         flex-direction: row;
         /* width: 100%; */
-        font-size: 2vw;
+        font-size: 2.5rem;
         text-decoration: none;
     }
 
     .branding img {
         /* position: absolute; */
-        width: 4.5vw;
+        width: 80px;
         transform: rotate(-30deg);
         transition: .5s ease all;
     }
@@ -208,7 +207,7 @@ export default {
     }
     .dropdown-nav li .link {
         color: #000;
-        font-size: 4vw;
+        font-size: 1.5rem;
         text-shadow: none;
     }
 
