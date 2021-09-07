@@ -120,7 +120,7 @@ export default {
         transform-origin: center;
     }
     .bg-text{
-        font-size: 3vw;
+        font-size: 3.5rem;
         font-weight: 900;
         opacity: 0.2;
     }
@@ -153,7 +153,9 @@ export default {
         padding: 10px 0;
     }
     #disabled-btn{
+        padding: 0;
         padding-top: 7px;
+        margin: 0;
     }
     .skill:hover {
         transform: scale(1.09);

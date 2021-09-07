@@ -59,15 +59,17 @@ export default {
 </script>
 <style>
     .iam-container {
-        margin-top: 10vh;
-        margin-bottom: 10vh;
+        margin-top: 5rem;
+        margin-bottom: 1rem;
         display: flex;
         justify-content: center;
         align-items: center;
+        /* width: 80%; */
     }
     .h1-iam {
-        font-size: 6vw;
+        font-size: 5rem;
         font-weight: 200;
+        text-align: center;
     }
     .typed-text{
         color:red;
@@ -86,5 +88,10 @@ export default {
         49% { background-color: black; }
         50% { background-color: transparent;}
         99% { background-color: transparent;}
+    }
+    @media (max-width: 800px){
+        .h1-iam{
+            font-size: 2rem;
+        }
     }
 </style>

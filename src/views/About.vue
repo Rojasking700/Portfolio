@@ -7,26 +7,27 @@
               <h1 >About</h1>
               <h2>I want to make a difference in the world!</h2>
               <p>I want to help small businesses like yours grow and revolutionize the world. 
-                I too have big dreams of innovating the world we live in. Through web development I can help spread 
-                your message and flourish your business to get it where you want to be.</p>
+                I have big dreams of innovating the world we live in. Through web development, 
+                I can help spread your message and flourish your business to get it where you want to be. </p>
             </div>
             <div class="about-bitext">
               <h1>Experience</h1>
               <h2>How I got to where I am today</h2>
-              <p>I have been coding for a few years now, but my professional experience comes from Coding Temple. 
-                This is where I learned Full-stack web development and data science. You can learn more about these skills on my home page. 
-                Before Coding Temple I attended Gateway Technical college where I learned C# and .net. Before that I was mostly self 
-                taught learning how to code on a raspberry pi making IOT projects in python. I have also worked in the manufacturing 
-                industry where I was a maintenance mechanic. Here I diagnosed mechanical, electrical, and software issues on industrial machines.</p>
+              <p>I have been coding for a few years now but my most professional experience comes from Coding Temple. 
+                This is where I have been able to expand my skills in Full-stack web development and data science. 
+                Before Coding Temple I attended Gateway Technical college where I learned C# and .net. Prior to that, 
+                I was mostly self-taught learning how to code on a raspberry pi making IoT projects in python. 
+                I have also worked in the manufacturing industry where I was a maintenance mechanic. 
+                Here I diagnosed mechanical, electrical, and software issues on industrial machines.</p>
             </div>
               <div class="about-bitext">
                 <h1>Me</h1>
                 <h2>Who am I?</h2>
                 <!-- <img src="https://via.placeholder.com/400x400" alt=""> -->
-                <p>My name is Gabriel Rojas, I grew up in the town of Kenosha, WI. I am a big car enthusiast that like to take rather basic cars 
-                  and do many pointless modifications to make them look better. There is nothing I care more about than having something look good. 
-                  Everything I do I make sure is done right and looks presentable. I have this attitude towards everything I do whether its modifying cars 
-                  or creating websites. </p>
+                <p>My name is Gabriel Rojas, I grew up in the town of Kenosha, WI. 
+                  I am a big car enthusiast that likes to take rather basic cars and do many modifications to make them look better. 
+                  There is nothing I care more about than having something look good. Everything I do I make sure is done right and looks presentable. 
+                  I have this attitude towards everything I do whether it's modifying cars or creating websites.  </p>
               </div>
           <!--<div class="about-bitext">
                 <h1 >A right</h1>
