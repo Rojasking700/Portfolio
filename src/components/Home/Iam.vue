@@ -15,7 +15,7 @@ export default {
         return {
             typeValue: '',
             typeStatus: false,
-            typeArray: ["I develop websites for startups","these are my skills:"],
+            typeArray: ["I develop websites","these are my skills:"],
             typingSpeed: 200,
             erasingSpeed: 200,
             newTextDelay: 2000,
@@ -91,7 +91,7 @@ export default {
     }
     @media (max-width: 800px){
         .h1-iam{
-            font-size: 2rem;
+            font-size: 3rem;
         }
     }
 </style>
