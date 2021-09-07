@@ -175,6 +175,27 @@ export default {
   font-size: 3vw;
   padding-top: 10px
 }
+.skills::-webkit-scrollbar {
+	height: 5px;
+}
+
+/* Track */
+.skills::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 5px grey;
+	border-radius: 10px;
+}
+
+/* Handle */
+.skills::-webkit-scrollbar-thumb {
+	background: rgb(129, 190, 255);
+	border-radius: 10px;
+}
+
+/* Handle on hover */
+.skills::-webkit-scrollbar-thumb:hover {
+	background: rgb(44, 146, 255);
+}
+
  @media (max-width: 800px) {
    .skills{
      max-width: 80%;

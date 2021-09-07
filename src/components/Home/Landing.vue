@@ -3,7 +3,8 @@
     <section class="landing">
         <div class="big-text">
         <h1 class="bitext">Gabriel Rojas</h1>
-        <p class="intro-par">"Design is a funny word. Some people think design means how it looks. But of course, if you dig deeper, it's really how it works" <br>-Steve Jobs</p>
+        <p class="intro-par">"Design is a funny word. Some people think design means how it looks. But of course, if you dig deeper, it's really how it works"</p> 
+        <p class="intro-par">-Steve Jobs </p>
         </div>
     </section>
 </main>
