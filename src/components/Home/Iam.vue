@@ -69,17 +69,17 @@ export default {
         font-size: 6vw;
         font-weight: 200;
     }
-    span.typed-text{
+    .typed-text{
         color:red;
     }
-    span.cursor{
+    .cursor{
         display: inline-block;
         margin-left: 3px;
         width: 4px;
         background-color: black;
         animation: cursorBlink 1s infinite;
     }
-    span.cursor.typing{
+    .cursor.typing{
         animation:none;
     }
     @keyframes cursorBlink {

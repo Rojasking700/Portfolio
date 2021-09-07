@@ -162,6 +162,7 @@ export default {
         }
         .about-bitext{
           width:100%;
+          margin: 1rem 0;   
         }
       .about-bitext h1 {
         font-size: 3rem;

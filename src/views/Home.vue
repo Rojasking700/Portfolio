@@ -153,6 +153,9 @@ export default {
 </script>
 
 <style>
+.home{
+  width: 100%;
+}
 .skills{
   display:flex;
   /* flex-wrap: wrap; */

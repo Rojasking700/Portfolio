@@ -144,10 +144,10 @@ export default {
     }
     @media (max-width: 800px) {
         .branding{
-            font-size: 5vw;
+            font-size: 1.75rem;
         }
         .branding img {
-            width: 6vw;
+            width: 50px;
         }
         
     }
