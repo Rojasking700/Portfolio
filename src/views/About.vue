@@ -15,31 +15,25 @@
               <h2>How I got to where I am today</h2>
               <p>I have been coding for a few years now, but my professional experience comes from Coding Temple. 
                 This is where I learned Full-stack web development and data science. You can learn more about these skills on my home page. 
-                Before Coding Temple I attended Gateway Technical college where I learned C# and .net. Prior to that I was mostly self 
+                Before Coding Temple I attended Gateway Technical college where I learned C# and .net. Before that I was mostly self 
                 taught learning how to code on a raspberry pi making IOT projects in python. I have also worked in the manufacturing 
                 industry where I was a maintenance mechanic. Here I diagnosed mechanical, electrical, and software issues on industrial machines.</p>
             </div>
-          </div>
-          <div class="about-column">
-              <!-- <div class="about-bitext">
+              <div class="about-bitext">
+                <h1>Me</h1>
+                <!-- <img src="https://via.placeholder.com/400x400" alt=""> -->
+                <p>I want to help small businesses like yours grow and revolutionize the world. 
+                  I too have big dreams of innovating the world we live in. Through web development I can help spread 
+                  your message and flourish your business to get it where you want to be.</p>
+              </div>
+          <!--<div class="about-bitext">
                 <h1 >A right</h1>
                 <h2>I want to make a difference in the world!</h2>
                 <p>I want to help small businesses like yours grow and revolutionize the world. 
                   I too have big dreams of innovating the world we live in. Through web development I can help spread 
                   your message and flourish your business to get it where you want to be.</p>
               </div> -->
-              
-
-
-              <div class="about-bitext">
-                <h1>Me</h1>
-                <img src="https://via.placeholder.com/400x400" alt="">
-                <!-- <h2>I want to make a difference in the world!</h2> -->
-                <p>I want to help small businesses like yours grow and revolutionize the world. 
-                  I too have big dreams of innovating the world we live in. Through web development I can help spread 
-                  your message and flourish your business to get it where you want to be.</p>
-              </div>
-            </div>
+          </div>
           </div>
     </section>
 </main>
@@ -106,19 +100,20 @@ export default {
       height: 100%;
       display: flex;
       flex-direction: row;
-      justify-content: space-around;
+      justify-content: center;
     }
     .about-column{
       display: flex;
       flex-direction: column;
-      justify-content: space-evenly;
+      justify-content: start;
       align-items: center;
-      width: 40%;
-      height: 100vh;
+      width: 80%;
+      height: 100%;
+      margin: 10% 0;
     }
     .about-bitext{
       padding: 1rem;
-      /* margin-top: 4rem 0; */
+      margin: 2rem 0;
       /* width:80%; */
       /* transform: translate( -5%,5%); */
       display:flex;
@@ -150,6 +145,9 @@ export default {
         /* transform: translate( 0%, 0%); */
         text-shadow:3px 3px 2px rgb(0, 0, 0);
     }
+    .about-bitext img{
+        width: 200px;
+      }
     @media (max-width: 800px){
         .about-big-text {
           width: 100%;
@@ -178,33 +176,5 @@ export default {
       .about-bitext img{
         width: 200px;
       }
-    }
-    .intro{
-        background: black;
-        position: fixed;
-        top:0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        display:flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .intro-text{
-        padding: 80px;
-        color: #fff;
-        font-size: 3rem;
-        text-align: center;
-    }
-    .text{
-        padding: 20px;
-    }
-    .hide{
-        background: black;
-        overflow: hidden;
-    }
-    .hide span{
-        transform: translateY(100%);
-        display: inline-block;
     }
 </style>

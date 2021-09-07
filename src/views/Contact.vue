@@ -15,16 +15,16 @@
         </div>
     </section>
 </main>
-    <div class="contact-intro">
-        <div class="contact-intro-text">
-            <h1 class="contact-hide">
-                <span class="contact-text">Dream</span>
+    <div class="intro">
+        <div class="intro-text">
+            <h1 class="hide">
+                <span class="text">Dream</span>
             </h1>
-            <h1 class="contact-hide">
-                <span class="contact-text">Create</span>
+            <h1 class="hide">
+                <span class="text">Create</span>
             </h1>
-            <h1 class="contact-hide">
-                <span class="contact-text">Inovate</span>    
+            <h1 class="hide">
+                <span class="text">Inovate</span>    
             </h1>
         </div>
     </div>
@@ -45,13 +45,13 @@ export default {
         ContactCards
     },
     mounted() {
-        const C1 = gsap.timeline({defaults: {ease: 'power1.out'} })
+        const t1 = gsap.timeline({defaults: {ease: 'power1.out'} })
 
-        C1.to('.contact-text', {y:'0%', duration:1 , stagger: 0.25})
-        C1.to('.contact-intro', {y:"-140%", duration: 1})
-        C1.fromTo('nav', {opacity:0}, {opacity: 1, duration: 0.75},'=-0.75')
-        C1.fromTo('.contact-big-text', {opacity:0}, {opacity: 1, duration: 0.75},'=-0.75')
-        C1.fromTo('.footer', {opacity:0}, {opacity: 1, duration: 0.75},'=-0.75')
+        t1.to('.text', {y:'0%', duration:1 , stagger: 0.25})
+        t1.to('.intro', {y:"-140%", duration: 1})
+        t1.fromTo('nav', {opacity:0}, {opacity: 1, duration: 0.75},'=-0.75')
+        t1.fromTo('.contact-big-text', {opacity:0}, {opacity: 1, duration: 0.75},'=-0.75')
+        t1.fromTo('.footer', {opacity:0}, {opacity: 1, duration: 0.75},'=-0.75')
 
 
     }
@@ -112,45 +112,6 @@ export default {
             transform: translate(0,0);
         }
 
-    }
-    .contact-intro{
-        background: black;
-        position: fixed;
-        top:0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        display:flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .contact-slider {
-        position: absolute;
-        background-size: cover;
-        display: flex;
-        justify-content: center;
-        top: 0;
-        right: 0  ;
-        width: 100%;
-        height: 100%;
-        overflow: visible;
-    }
-    .contact-intro-text{
-        padding: 80px;
-        color: #fff;
-        font-size: 3rem;
-        text-align: center;
-    }
-    .contact-text{
-        padding: 20px;
-    }
-    .contact-hide{
-        background: black;
-        overflow: hidden;
-    }
-    .contact-hide span{
-        transform: translateY(100%);
-        display: inline-block;
     }
     .contactcards{
         position: absolute;
