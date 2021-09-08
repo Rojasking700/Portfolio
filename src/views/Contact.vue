@@ -47,14 +47,14 @@ export default {
         ContactCards
     },
     mounted() {
-        const t1 = gsap.timeline({defaults: {ease: 'power1.out'} })
+        const tl = gsap.timeline({defaults: {ease: 'power1.out'} })
 
-        t1.to('.text', {y:'0%', duration:1 , stagger: 0.25})
-        t1.to('.intro', {y:"-140%", duration: 1.25})
-        t1.fromTo('nav', {opacity:0}, {opacity: 1, duration: 0.75},'=-0.75')
-        t1.fromTo('.contact-big-text', {opacity:0}, {opacity: 1, duration: 0.75},'=-0.75')
-        t1.fromTo('.contact-card', {opacity:0}, {opacity: 1, duration: 0.75, stagger: 0.25},'=-0.75')
-        t1.fromTo('.footer', {opacity:0}, {opacity: 1, duration: 0.75},'=-0.75')
+        tl.to('.text', {y:'0%', duration:.5 , stagger: 0.25})
+        tl.to('.intro', {y:"-140%", duration: 1.5})
+        tl.fromTo('nav', {opacity:0}, {opacity: 1, duration: 0.75},'=-0.75')
+        tl.fromTo('.contact-big-text', {opacity:0}, {opacity: 1, duration: 0.75},'=-0.75')
+        tl.fromTo('.contact-card', {opacity:0}, {opacity: 1, duration: 0.5, stagger: 0.25},'=-0.75')
+        tl.fromTo('.footer', {opacity:0}, {opacity: 1, duration: 0.75},'=-0.75')
 
 
     }

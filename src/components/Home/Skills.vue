@@ -136,7 +136,7 @@ export default {
     .skill-image-wrap img {
         width: 100px;
         height: 100px;
-        filter: drop-shadow(0px 0px 12px rgba(0,0,0,0,0.25));
+        /* filter: drop-shadow(0px 0px 12px rgba(0,0,0,0,1)); */
     }
     .skill-detail{
         align-items: center;
@@ -187,8 +187,6 @@ export default {
         
         transition: 0.15s ease;
     }
-
-
     .skill-btn:active {
         color: #000;
         background-color: #eee;
