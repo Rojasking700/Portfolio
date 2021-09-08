@@ -130,6 +130,13 @@ export default {
         
         transition: 0.15s ease;
     }
+    .footer-btn:active {
+        color: #000;
+        background-color: #eee;
+        box-shadow: 2px 2px #666;
+        transform: translateY(3px);
+        transition: 0.01s ease;
+    }
     /* ------------------------------------------------------------------------------------- */
     .footer-container {
         display: flex;
