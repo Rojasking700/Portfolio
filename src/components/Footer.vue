@@ -109,7 +109,6 @@ export default {
         display: flex;
         justify-content: center;
         width: 150px;
-        /* display: inline-block; */
         padding: 15px 5px;
         font-size: 1.3rem;
         cursor: pointer;
