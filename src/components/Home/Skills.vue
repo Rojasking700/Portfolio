@@ -135,15 +135,12 @@ export default {
     }
     .skill-image-wrap img {
         width: 100px;
+        height: 100px;
         filter: drop-shadow(0px 0px 12px rgba(0,0,0,0,0.25));
     }
     .skill-detail{
         align-items: center;
         margin: 50px 0px 0;
-    }
-    .skill-detail h2 {
-        font-size: 24vh;
-        font-weight: 700;
     }
     .skill-detail p {
         font-family: 'Montserrat', sans-serif;
@@ -204,12 +201,8 @@ export default {
         .skill{
             min-width: 300px;
         }
-        .skill-image-wrap img{
-            min-width: 15vw;
-
-        }
         .bg-text{
-            font-size: 10vw;
+            font-size: 3rem;
         }
         .skill-btn{
             font-size: 1rem;
