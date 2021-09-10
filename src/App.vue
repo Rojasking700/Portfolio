@@ -56,6 +56,9 @@ export default {
     /* margin-bottom: 30vh; */
     padding-bottom: 20rem;
   }
+  p{
+    font-family: 'Montserrat', sans-serif;
+  }
   @media (max-width: 800px){
     .app{
       padding-bottom: 40rem;

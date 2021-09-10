@@ -88,7 +88,6 @@ export default {
         background: rgba(0,0,0,0.25);
     }
     .contact-big-text{
-        font-family: 'Fjalla One', sans-serif;
         position: absolute;
         top:30%;
         left:50%;
@@ -101,6 +100,7 @@ export default {
         height: 100%;
     }
     .contact-intro-par{
+        font-family: 'Fjalla One', sans-serif;
         display: flex;
         justify-content: center;
         font-size: 1.5rem;

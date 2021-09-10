@@ -71,6 +71,7 @@ export default {
         transform: translate( -50%,-25%);
     }
     .intro-par{
+        font-family: 'Fjalla One', sans-serif;
         display: flex;
         justify-content: center;
         font-size: 2vw;
