@@ -46,7 +46,9 @@ export default {
         overflow: none;
     }
     .project-card h1{
-        font-size: 3rem;
+        font-size: 3rem; 
+        font-weight: 100;
+        /* color: rgb(80, 80, 80);  */
     }
     .project-card h2{
         font-weight: 100;

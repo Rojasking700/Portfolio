@@ -142,6 +142,10 @@ export default {
         align-items: center;
         margin: 50px 0px 0;
     }
+    .skill-detail h3{
+        font-size: 1.3rem;
+        font-weight: 100;
+    }
     .skill-detail p {
         font-family: 'Montserrat', sans-serif;
         font-size: 1rem;
