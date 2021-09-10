@@ -33,7 +33,11 @@
 
       <h1 class="projects-header">Here are my projects:</h1>
       <section class="projects">
-        <Projects/>
+        <Projects
+          v-for="project in projects"
+            :key=project.title
+            :project="project"
+        />
       </section>
 
     </div>
@@ -157,9 +161,18 @@ export default {
         {
           title: 'MyFi',
           brief: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec gravida cursus ante, at euismod ipsum pharetra accumsan. Aliquam interdum aliquam ante, ultrices placerat lorem fringilla a. Nunc a ex id magna venenatis tempor.',
-          skills: ['Python','Javascript','Flask','React.js','API','SQL','Database']
+          skills: {Python:'Python',Javascript:'Javascript',Flask:'Flask',React:'React.js',API:'API',SQL:'SQL',Database:'Database',HTML:'HTML',CSS:'CSS'}
         },
-        {}
+        {
+          title: 'Portfolio',
+          brief: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec gravida cursus ante, at euismod ipsum pharetra accumsan. Aliquam interdum aliquam ante, ultrices placerat lorem fringilla a. Nunc a ex id magna venenatis tempor.',
+          skills: {Javascript:'Javascript',Vue:'Vue.js',HTML:'HTML',CSS:'CSS', }
+        },
+        {
+          title: 'Recipe Blog',
+          brief: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec gravida cursus ante, at euismod ipsum pharetra accumsan. Aliquam interdum aliquam ante, ultrices placerat lorem fringilla a. Nunc a ex id magna venenatis tempor.',
+          skills: {Python:'Python',Javascript:'Javascript',Flask:'Flask',React:'React.js',API:'API',SQL:'SQL',Database:'Database',HTML:'HTML',CSS:'CSS'}
+        },
       ],
     }
   },
@@ -215,6 +228,12 @@ export default {
   font-size: 5rem;
   font-weight: 200;
   text-align: center;
+}
+.projects{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
  @media (max-width: 800px) {
