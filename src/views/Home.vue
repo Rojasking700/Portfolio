@@ -205,6 +205,8 @@ export default {
   padding: 25px 0;
   margin: auto;
   overflow-x: auto;
+  background: rgba(0,0,0,0.04);
+  border-radius: 10px;
   /* align-items: center; */
 }
 

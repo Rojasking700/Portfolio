@@ -99,6 +99,7 @@ export default {
         min-width: 350px;
         max-width: 350px;
         transition: 0.25s ease-out;
+        background: rgb(255,255,255);
     }
 
     .skill-inner{
