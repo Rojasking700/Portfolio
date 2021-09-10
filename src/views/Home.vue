@@ -31,6 +31,8 @@
           />
       </section> 
 
+      <br><br><br>
+
       <h1 class="projects-header">Here are my projects:</h1>
       <section class="projects">
         <Projects
@@ -162,7 +164,7 @@ export default {
           title: 'MyFi',
           sub:'(My Finance) Track your stocks!',
           brief: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec gravida cursus ante, at euismod ipsum pharetra accumsan. Aliquam interdum aliquam ante, ultrices placerat lorem fringilla a. Nunc a ex id magna venenatis tempor.',
-          skills: {Python:'Python',Javascript:'Javascript',Flask:'Flask',React:'React.js',API:'API',SQL:'SQL',Database:'Database',HTML:'HTML',CSS:'CSS'},
+          skills: [{title:'Python',detail:''},{title:'Javascript'},{title:'Flask'},{title:'React.js'},{title:'API'},{title:'SQL'},{title:'Database'},{title:'HTML'},{title:'CSS'}],
           gitLink: 'https://github.com/Rojasking700/MyFi',
           imgs: [require('../assets/Projects/MyFI/TopResult.jpeg')],
         },
@@ -170,7 +172,7 @@ export default {
           title: 'Portfolio',
           sub:'Learn more about how I made this website!',
           brief: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec gravida cursus ante, at euismod ipsum pharetra accumsan. Aliquam interdum aliquam ante, ultrices placerat lorem fringilla a. Nunc a ex id magna venenatis tempor.',
-          skills: {Javascript:'Javascript',Vue:'Vue.js',HTML:'HTML',CSS:'CSS', },
+          skills: [{title:'Javascript'},{title:'Vue.js'},{title:'HTML'},{title:'CSS'},],
           gitLink: 'https://github.com/Rojasking700/Portfolio',
           imgs: [require('../assets/Projects/MyFI/TopResult.jpeg')],
         },
@@ -178,7 +180,7 @@ export default {
           title: 'Recipe Blog',
           sub: 'A blog where you can share all your favorite recipes!',
           brief: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec gravida cursus ante, at euismod ipsum pharetra accumsan. Aliquam interdum aliquam ante, ultrices placerat lorem fringilla a. Nunc a ex id magna venenatis tempor.',
-          skills: {Python:'Python',Javascript:'Javascript',Flask:'Flask',React:'React.js',API:'API',SQL:'SQL',Database:'Database',HTML:'HTML',CSS:'CSS'},
+          skills: [{title:'Python'},{title:'Javascript'},{title:'Flask'},{title:'React.js'},{title:'API'},{title:'SQL'},{title:'Database'},{title:'HTML'},{title:'CSS'}],
           gitLink: 'https://github.com/briannaswales/flask-react-group-2',
           imgs: [require('../assets/Projects/MyFI/TopResult.jpeg')],
         },
