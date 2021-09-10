@@ -8,10 +8,10 @@
                     </router-link>
             </div>
             <ul v-show="!mobile" class="navigation">
-                <li><router-link class="link" :to="{name: 'Home'}">Home</router-link></li>
-                <li><router-link class="link" :to="{name: 'About'}">About Me</router-link></li>
+                <li><router-link @click="scrollToTop()" class="link" :to="{name: 'Home'}">Home</router-link></li>
+                <li><router-link @click="scrollToTop()" class="link" :to="{name: 'About'}">About Me</router-link></li>
                 <!-- <li><router-link class="link" :to="{name: 'Portfolio'}">Portfolio</router-link></li> -->
-                <li><router-link class="link" :to="{name: 'Contact'}">Contact</router-link></li>
+                <li><router-link @click="scrollToTop()" class="link" :to="{name: 'Contact'}">Contact</router-link></li>
             </ul>
             <div class="icon">
                 <i @click="toggleMobileNav" v-show="mobile" class="far fa-bars" :class="{'icon-active' : mobileNav}"></i>
@@ -19,10 +19,10 @@
             <transition name="mobile-nav">
                 <ul v-show="mobileNav" class="dropdown-nav">
                     <div class="list">
-                        <li><router-link class="link" :to="{name: 'Home'}">Home</router-link></li>
-                        <li><router-link class="link" :to="{name: 'About'}">About Me</router-link></li>
+                        <li><router-link @click="scrollToTop()" class="link" :to="{name: 'Home'}">Home</router-link></li>
+                        <li><router-link @click="scrollToTop()" class="link" :to="{name: 'About'}">About Me</router-link></li>
                         <!-- <li><router-link class="link" :to="{name: 'Portfolio'}">Portfolio</router-link></li> -->
-                        <li><router-link class="link" :to="{name: 'Contact'}">Contact</router-link></li>
+                        <li><router-link @click="scrollToTop()" class="link" :to="{name: 'Contact'}">Contact</router-link></li>
                     </div>
                 </ul>
             </transition>
@@ -68,7 +68,10 @@ export default {
             this.mobile = false;
             this.mobileNav = false;
             return;
-        }
+        },
+        scrollToTop() {
+                window.scrollTo(0,0);
+           }
     },
 };
 </script>

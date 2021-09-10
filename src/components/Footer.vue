@@ -4,7 +4,7 @@
         <div class="lets-talk">
             <h1>Let's Talk</h1>
             <p>Feel free to contact me about any questions you may have about me or my experience. If you find any bugs or have any suggestions about the site please let me know so I can improve and make this a better place.  </p>
-            <router-link class="footer-btn" :to="{name: 'Contact'}">Contact Me</router-link>
+            <router-link @click="scrollToTop()" class="footer-btn" :to="{name: 'Contact'}">Contact Me</router-link>
         </div>
         <div class="footer-contact">
             <div class="footer-lists">
@@ -45,7 +45,9 @@ export default {
     name: 'contactInfo',
     props:['contactInfo'],
     methods: {
-        
+        scrollToTop() {
+                window.scrollTo(0,0);
+           }
     }
 }
 </script>
