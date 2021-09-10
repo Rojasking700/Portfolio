@@ -31,6 +31,11 @@
           />
       </section> 
 
+      <h1 class="projects-header">Here are my projects:</h1>
+      <section class="projects">
+        <Projects/>
+      </section>
+
     </div>
 
   </section>
@@ -41,6 +46,7 @@
 import Iam from '../components/Home/Iam.vue';
 import Landing from '../components/Home/Landing.vue';
 import Skills from '../components/Home/Skills.vue';
+import Projects from '../components/Home/Projects.vue'
 
 
 export default {
@@ -48,13 +54,13 @@ export default {
   components: {
     Landing,
     Iam,
-    Skills
+    Skills,
+    Projects
   },
   
   data() {
     return{
-      skills: [
-        
+      skills: [ 
         {
           title: 'Python',
           Category:'Language',
@@ -146,7 +152,15 @@ export default {
           src: require('../assets/Skills/Google-Logo.png'),
           detail: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime aliquid debitis vero ab veniam. Magnam amet ea laboriosam eius quibusdam?'
         },
-      ]
+      ],
+      projects: [
+        {
+          title: 'MyFi',
+          brief: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec gravida cursus ante, at euismod ipsum pharetra accumsan. Aliquam interdum aliquam ante, ultrices placerat lorem fringilla a. Nunc a ex id magna venenatis tempor.',
+          skills: ['Python','Javascript','Flask','React.js','API','SQL','Database']
+        },
+        {}
+      ],
     }
   },
 }
@@ -172,6 +186,7 @@ export default {
 .skills-header {
   display: flex;
   justify-content: center;
+  color: rgb(50, 50, 50);
   font-size: 3vw;
   padding-top: 10px
 }
@@ -194,6 +209,12 @@ export default {
 /* Handle on hover */
 .skills::-webkit-scrollbar-thumb:hover {
 	background: rgb(44, 146, 255);
+}
+
+.projects-header{
+  font-size: 5rem;
+  font-weight: 200;
+  text-align: center;
 }
 
  @media (max-width: 800px) {
