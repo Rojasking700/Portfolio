@@ -94,12 +94,12 @@ export default {
         display: flex;
         align-items: center;
     }
-    .project-skill-list li:hover{
+    /* .project-skill-list li:hover{
         transition: 0.25s ease-out;
         box-shadow:  0 4px 8px 0 rgba(0,0,0,0.8);
         transform: scale(1.09);
         font-weight: 900;
-    }
+    } */
     #project-effect{
         position: absolute;
         right:10px;
