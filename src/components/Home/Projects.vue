@@ -40,6 +40,7 @@ export default {
         display: flex;
         justify-content: space-around;
         flex-direction: row;
+        transition: 0.4s ease-out;
         /* border: 1px solid black; */
         
         box-shadow:  0 0px 12px 0 rgba(0,0,0,0.4);
@@ -52,7 +53,7 @@ export default {
         margin-left: 10px;
         /* border: 1px solid black; */
         overflow: none;
-        padding: 0 10px;
+        padding: 10px 10px;
     }
     .project-card h1{
         font-size: 3rem; 
@@ -132,6 +133,7 @@ export default {
         .project-card{
             flex-direction: column;
             width:90%;
+            transition: 0.5s ease-out;
         }
         .project-left{
             width: 100%;
@@ -140,6 +142,9 @@ export default {
             width: 100%;
             padding: 0 10px;
             margin: 0;
+        }
+        .project-img{
+            margin: 2% 0;
         }
     @media (max-width: 800px) {
         
