@@ -11,9 +11,9 @@
            <p>{{ project.brief }}</p>
            <br>
            <h3>Problems I overcame:</h3>
-           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio quas, quos enim aut tempore nesciunt molestiae iste quod fugit alias?</p>
+           <p>{{ project.problems}}</p>
            <br>
-           <h3>Skills Used:</h3>
+           <h3>Skills used:</h3>
             <ul class="project-skill-list">
                 <li v-for="skill in project.skills" :key="skill" >{{ skill.title }}</li>
             </ul>
@@ -45,14 +45,14 @@ export default {
         box-shadow:  0 0px 12px 0 rgba(0,0,0,0.4);
         border-radius: 10px;
         /* padding: 5px; */
-        margin: 10px 0;
+        margin: 20px 0;
     }
     .project-right{
         width: 60%;
-        margin-left: 20px;
+        margin-left: 10px;
         /* border: 1px solid black; */
         overflow: none;
-        /* padding: 5px; */
+        padding: 0 10px;
     }
     .project-card h1{
         font-size: 3rem; 
@@ -83,7 +83,7 @@ export default {
     }
     .project-skill-list li{
         padding: 10px;
-        margin: 5px 7.5px;
+        margin: 0 7.5px 7.5px 0;
         box-shadow:  0 2px 4px 0 rgba(0,0,0,0.2);
         border: 1px solid rgba(0, 0, 0, 0.123);
         border-radius: 10px;
@@ -104,6 +104,10 @@ export default {
         right:10px;
         bottom: 10px;
     }
+    #projects-effect a {
+        color: rgb(0, 120, 180);
+        border: 2px solid rgb(0, 120, 180);
+    }
     .project-left{
         width: 600px;
         /* min-width: 400px; */
@@ -113,12 +117,12 @@ export default {
         display: flex;
         justify-content: center;
         align-items: center;
-        background: rgb(0, 89, 255);
+        background: rgba(0,0,0,0.04);
         border-radius:10px;
     }
     .project-img{
         /* width: 300px; */
-        width: 100%;
+        width: 95%;
         border-radius:10px;
         /* height: 100%; */
         /* border: 1px solid black; */
@@ -134,7 +138,11 @@ export default {
         }
         .project-right{
             width: 100%;
+            padding: 0 10px;
             margin: 0;
         }
+    @media (max-width: 800px) {
+        
+    }
     }
 </style>

@@ -163,7 +163,8 @@ export default {
         {
           title: 'MyFi',
           sub:'(My Finance) Track your stocks!',
-          brief: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec gravida cursus ante, at euismod ipsum pharetra accumsan. Aliquam interdum aliquam ante, ultrices placerat lorem fringilla a. Nunc a ex id magna venenatis tempor.',
+          brief: 'MyFi is a web app designed to keep track of information and analysis. Capable of searching any stock you choose. Create your own profile and compose a custom watchlist tailored to your portfolio. Powered by a user-friendly React frontend, and transmitted the data from the Alpha Vantage API, through a Flask backend.',
+          problems: 'I was unable to keep the users logged in every time they refreshed the page. Determined, I read various forums online on how to save data to local storage. With that, I was able to implement the use of tokens that expire after 60 mins.',
           skills: [{title:'Python',detail:''},{title:'Javascript'},{title:'Flask'},{title:'React.js'},{title:'API'},{title:'SQL'},{title:'Database'},{title:'HTML'},{title:'CSS'}],
           gitLink: 'https://github.com/Rojasking700/MyFi',
           imgs: [require('../assets/Projects/MyFI/TopResult.jpeg')],
@@ -171,15 +172,18 @@ export default {
         {
           title: 'Portfolio',
           sub:'Learn more about how I made this website!',
-          brief: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec gravida cursus ante, at euismod ipsum pharetra accumsan. Aliquam interdum aliquam ante, ultrices placerat lorem fringilla a. Nunc a ex id magna venenatis tempor.',
+          brief: 'My portfolio website was established as an online interactive resume. Here I demonstrate the skills I have learned from my own and from previous experience at coding temple. Visualized by HTML & CSS, Composed by the Vue.js framework, and animated by JavaScript!',
+          problems: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec gravida cursus ante, at euismod ipsum pharetra accumsan. Aliquam interdum aliquam ante, ultrices placerat lorem fringilla a. Nunc a ex id magna venenatis tempor.',
           skills: [{title:'Javascript'},{title:'Vue.js'},{title:'HTML'},{title:'CSS'},],
           gitLink: 'https://github.com/Rojasking700/Portfolio',
-          imgs: [require('../assets/Projects/MyFI/TopResult.jpeg')],
+          imgs: [require('../assets/Projects/Portfolio/Home_Protfolio.jpeg')],
+          // src\assets\Projects\Portfolio\Home_Protfolio.jpeg
         },
         {
           title: 'Recipe Blog',
           sub: 'A blog where you can share all your favorite recipes!',
           brief: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec gravida cursus ante, at euismod ipsum pharetra accumsan. Aliquam interdum aliquam ante, ultrices placerat lorem fringilla a. Nunc a ex id magna venenatis tempor.',
+          problems: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec gravida cursus ante, at euismod ipsum pharetra accumsan. Aliquam interdum aliquam ante, ultrices placerat lorem fringilla a. Nunc a ex id magna venenatis tempor.',
           skills: [{title:'Python'},{title:'Javascript'},{title:'Flask'},{title:'React.js'},{title:'API'},{title:'SQL'},{title:'Database'},{title:'HTML'},{title:'CSS'}],
           gitLink: 'https://github.com/briannaswales/flask-react-group-2',
           imgs: [require('../assets/Projects/MyFI/TopResult.jpeg')],
@@ -205,7 +209,7 @@ export default {
   padding: 25px 0;
   margin: auto;
   overflow-x: auto;
-  background: rgba(0,0,0,0.04);
+  /* background: rgba(0,0,0,0.04); */
   border-radius: 10px;
   /* align-items: center; */
 }
@@ -214,6 +218,7 @@ export default {
   display: flex;
   justify-content: center;
   color: rgb(50, 50, 50);
+  font-weight: 100;
   font-size: 3vw;
   padding-top: 10px
 }
@@ -256,6 +261,9 @@ export default {
    }
    .skills-header{
      font-size: 2rem;
+   }
+   .projects-header{
+     font-size: 4rem;
    }
  }
 
