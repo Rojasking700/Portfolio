@@ -31,6 +31,17 @@
           />
       </section> 
 
+      <br><br><br>
+
+      <h1 class="projects-header">Here are my projects:</h1>
+      <section class="projects">
+        <Projects
+          v-for="project in projects"
+            :key=project.title
+            :project="project"
+        />
+      </section>
+
     </div>
 
   </section>
@@ -41,6 +52,7 @@
 import Iam from '../components/Home/Iam.vue';
 import Landing from '../components/Home/Landing.vue';
 import Skills from '../components/Home/Skills.vue';
+import Projects from '../components/Home/Projects.vue'
 
 
 export default {
@@ -48,13 +60,13 @@ export default {
   components: {
     Landing,
     Iam,
-    Skills
+    Skills,
+    Projects
   },
   
   data() {
     return{
-      skills: [
-        
+      skills: [ 
         {
           title: 'Python',
           Category:'Language',
@@ -146,7 +158,36 @@ export default {
           src: require('../assets/Skills/Google-Logo.png'),
           detail: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime aliquid debitis vero ab veniam. Magnam amet ea laboriosam eius quibusdam?'
         },
-      ]
+      ],
+      projects: [
+        {
+          title: 'Recipe Blog',
+          sub: 'A blog where you can share all your favorite recipes!',
+          brief: 'This blog is designed to help you share any meals you have made and any recipes you would like to share! Easily create a post or scroll through others’ posts assembled by the React frontend. All of this data is handled through the flask backend that stores and retrieves it from a database.',
+          problems: 'Creating an account wasn’t as easy as it is now. When trying to create new accounts using postman, I would submit the data but it would not show up on my database. I figured out, by printing all the data coming that I was not filling all the requirements need for that model. Moral of the story: when in doubt print it out!',
+          skills: [{title:'Python'},{title:'Javascript'},{title:'Flask'},{title:'React.js'},{title:'API'},{title:'SQL'},{title:'Database'},{title:'HTML'},{title:'CSS'}],
+          gitLink: 'https://github.com/briannaswales/flask-react-group-2',
+          imgs: [require('../assets/Projects/Recipe_blog/HomeRecipe.jpg')],
+        },
+        {
+          title: 'Portfolio',
+          sub:'Learn more about how I made this website!',
+          brief: 'My portfolio website was established as an online interactive resume. Here I demonstrate the skills I have learned from my own and from previous experience at coding temple. Visualized by HTML & CSS, Composed by the Vue.js framework, and animated by JavaScript!',
+          problems: 'The Icons moving with the mouse proved to be a learning curve with the Vue. Previously I used vanilla Javascript that kept track of the coordinates of the mouse, but In Vue I had to create various lifecycle hooks to listen for mouse movement, update mouse coordinate, and translate the images accordingly.',
+          skills: [{title:'Javascript'},{title:'Vue.js'},{title:'HTML'},{title:'CSS'},],
+          gitLink: 'https://github.com/Rojasking700/Portfolio',
+          imgs: [require('../assets/Projects/Portfolio/Home_Protfolio.jpeg')],
+        },
+        {
+          title: 'MyFi',
+          sub:'(My Finance) Track your stocks!',
+          brief: 'MyFi is a web app designed to keep track of information and analysis. Capable of searching any stock you choose. Create your own profile and compose a custom watchlist tailored to your portfolio. Powered by a user-friendly React frontend, and transmitted the data from the Alpha Vantage API, through a Flask backend.',
+          problems: 'I was unable to keep the users logged in every time they refreshed the page. Determined, I read various forums online on how to save data to local storage. With that, I was able to implement the use of tokens that expire after 60 mins.',
+          skills: [{title:'Python',detail:''},{title:'Javascript'},{title:'Flask'},{title:'React.js'},{title:'API'},{title:'SQL'},{title:'Database'},{title:'HTML'},{title:'CSS'}],
+          gitLink: 'https://github.com/Rojasking700/MyFi',
+          imgs: [require('../assets/Projects/MyFI/FullResult.jpg')],
+        },
+      ],
     }
   },
 }
@@ -155,6 +196,7 @@ export default {
 <style>
 .home{
   width: 100%;
+  padding-bottom: 5rem;
 }
 .skills{
   display:flex;
@@ -166,12 +208,16 @@ export default {
   padding: 25px 0;
   margin: auto;
   overflow-x: auto;
+  /* background: rgba(0,0,0,0.04); */
+  border-radius: 10px;
   /* align-items: center; */
 }
 
 .skills-header {
   display: flex;
   justify-content: center;
+  color: rgb(50, 50, 50);
+  font-weight: 100;
   font-size: 3vw;
   padding-top: 10px
 }
@@ -196,12 +242,27 @@ export default {
 	background: rgb(44, 146, 255);
 }
 
+.projects-header{
+  font-size: 5rem;
+  font-weight: 200;
+  text-align: center;
+}
+.projects{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
  @media (max-width: 800px) {
    .skills{
      max-width: 80%;
    }
    .skills-header{
      font-size: 2rem;
+   }
+   .projects-header{
+     font-size: 4rem;
    }
  }
 

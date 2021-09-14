@@ -99,6 +99,7 @@ export default {
         min-width: 350px;
         max-width: 350px;
         transition: 0.25s ease-out;
+        background: rgb(255,255,255);
     }
 
     .skill-inner{
@@ -141,6 +142,10 @@ export default {
     .skill-detail{
         align-items: center;
         margin: 50px 0px 0;
+    }
+    .skill-detail h3{
+        font-size: 1.3rem;
+        font-weight: 100;
     }
     .skill-detail p {
         font-family: 'Montserrat', sans-serif;

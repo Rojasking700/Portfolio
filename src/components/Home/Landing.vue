@@ -36,8 +36,9 @@ export default {
         tl.to('.intro', {y:"-140%", duration: 1})
         tl.fromTo('nav', {opacity:0}, {opacity: 1, duration: 0.75},'=-0.75')
         tl.fromTo('.big-text', {opacity:0}, {opacity: 1, duration: 0.75},'=-0.75')
-        tl.fromTo('.skills', {opacity:0}, {opacity: 1, duration: 0.75},'=-0.75')
         tl.fromTo('.skills-header', {opacity:0}, {opacity: 0.75, duration: 0.75},'=-0.75')
+        tl.fromTo('.skills', {opacity:0}, {opacity: 1, duration: 0.75},'=-0.75')
+        tl.fromTo('.projects', {opacity:0}, {opacity: 1, duration: 0.75},'=-0.75')
         tl.fromTo('.footer', {opacity:0}, {opacity: 1, duration: 0.75},'=-0.75')
 
 
@@ -71,6 +72,7 @@ export default {
         transform: translate( -50%,-25%);
     }
     .intro-par{
+        font-family: 'Fjalla One', sans-serif;
         display: flex;
         justify-content: center;
         font-size: 2vw;

@@ -12,7 +12,7 @@
             </div>
             <div class="about-bitext">
               <h1>Experience</h1>
-              <h2>How I got to where I am today</h2>
+              <h2>How I got to where I am today?</h2>
               <p>I have been coding for a few years now but my most professional experience comes from Coding Temple. 
                 This is where I have been able to expand my skills in Full-stack web development and data science. 
                 Before Coding Temple I attended Gateway Technical college where I learned C# and .net. Prior to that, 
@@ -26,16 +26,9 @@
                 <!-- <img src="https://via.placeholder.com/400x400" alt=""> -->
                 <p>My name is Gabriel Rojas, I grew up in the town of Kenosha, WI. 
                   I am a big car enthusiast that likes to take rather basic cars and do many modifications to make them look better. 
-                  There is nothing I care more about than having something look good. Everything I do I make sure is done right and looks presentable. 
+                  There is nothing I care more about than having something look good. Everything I do I make sure it is done right and looks presentable. 
                   I have this attitude towards everything I do whether it's modifying cars or creating websites.  </p>
               </div>
-          <!--<div class="about-bitext">
-                <h1 >A right</h1>
-                <h2>I want to make a difference in the world!</h2>
-                <p>I want to help small businesses like yours grow and revolutionize the world. 
-                  I too have big dreams of innovating the world we live in. Through web development I can help spread 
-                  your message and flourish your business to get it where you want to be.</p>
-              </div> -->
           </div>
           </div>
     </section>
