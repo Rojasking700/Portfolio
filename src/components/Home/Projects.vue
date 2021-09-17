@@ -41,24 +41,22 @@ export default {
         justify-content: space-around;
         flex-direction: row;
         transition: 0.4s ease-out;
-        /* border: 1px solid black; */
-        
+        /* background-image: linear-gradient(160deg, #00a2ff 0%, #8efff2 55%); */
         box-shadow:  0 0px 12px 0 rgba(0,0,0,0.4);
         border-radius: 10px;
-        /* padding: 5px; */
         margin: 20px 0;
     }
     .project-right{
         width: 60%;
         margin-left: 10px;
-        /* border: 1px solid black; */
+        border-radius: 10px;
+        background: rgba(255,255,255,0.);
         overflow: none;
         padding: 10px 10px;
     }
     .project-card h1{
         font-size: 3rem; 
         font-weight: 100;
-        /* color: rgb(80, 80, 80);  */
     }
     .project-card h2{
         font-weight: 100;
@@ -87,12 +85,13 @@ export default {
         margin: 0 7.5px 7.5px 0;
         box-shadow:  0 2px 4px 0 rgba(0,0,0,0.2);
         border: 1px solid rgba(0, 0, 0, 0.123);
+        /* background: #2cfae9; */
         border-radius: 10px;
         font-family: 'Montserrat', sans-serif;
-        /* font-weight: 900; */
         transition: 0.25s ease-out;
         display: flex;
         align-items: center;
+        
     }
     /* .project-skill-list li:hover{
         transition: 0.25s ease-out;
@@ -106,27 +105,20 @@ export default {
         bottom: 10px;
     }
     #projects-effect a {
-        color: rgb(0, 120, 180);
-        border: 2px solid rgb(0, 120, 180);
+        color: rgb(255, 255, 255);
+        border: 2px solid rgb(255, 255, 255);
     }
     .project-left{
         width: 600px;
-        /* min-width: 400px; */
-        /* height: 300px; */
-        /* min-height: 200px; */
-        /* border: 1px solid black; */
         display: flex;
         justify-content: center;
         align-items: center;
-        background: rgba(0,0,0,0.04);
+        background: rgba(0, 0, 0, 0.04);
         border-radius:10px;
     }
     .project-img{
-        /* width: 300px; */
         width: 95%;
         border-radius:10px;
-        /* height: 100%; */
-        /* border: 1px solid black; */
     }
 
     @media (max-width: 1200px){

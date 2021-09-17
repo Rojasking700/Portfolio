@@ -162,8 +162,8 @@ export default {
       projects: [
         {
           title: 'Recipe Blog',
-          sub: 'A blog where you can share all your favorite recipes!',
-          brief: 'This blog is designed to help you share any meals you have made and any recipes you would like to share! Easily create a post or scroll through others’ posts assembled by the React frontend. All of this data is handled through the flask backend that stores and retrieves it from a database.',
+          sub: 'Share all your favorite recipes!',
+          brief: 'A blog is designed to help you share any meals you have made and any recipes you would like to share! Easily create a post or scroll through others’ posts assembled by the React frontend. All of this data is handled through the flask backend that stores and retrieves it from a database.',
           problems: 'Creating an account wasn’t as easy as it is now. When trying to create new accounts using postman, I would submit the data but it would not show up on my database. I figured out, by printing all the data coming that I was not filling all the requirements need for that model. Moral of the story: when in doubt print it out!',
           skills: [{title:'Python'},{title:'Javascript'},{title:'Flask'},{title:'React.js'},{title:'API'},{title:'SQL'},{title:'Database'},{title:'HTML'},{title:'CSS'}],
           gitLink: 'https://github.com/briannaswales/flask-react-group-2',
@@ -171,7 +171,7 @@ export default {
         },
         {
           title: 'Portfolio',
-          sub:'Learn more about how I made this website!',
+          sub:'Learn more about this website!',
           brief: 'My portfolio website was established as an online interactive resume. Here I demonstrate the skills I have learned from my own and from previous experience at coding temple. Visualized by HTML & CSS, Composed by the Vue.js framework, and animated by JavaScript!',
           problems: 'The Icons moving with the mouse proved to be a learning curve with the Vue. Previously I used vanilla Javascript that kept track of the coordinates of the mouse, but In Vue I had to create various lifecycle hooks to listen for mouse movement, update mouse coordinate, and translate the images accordingly.',
           skills: [{title:'Javascript'},{title:'Vue.js'},{title:'HTML'},{title:'CSS'},],
