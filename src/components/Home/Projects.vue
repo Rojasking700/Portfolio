@@ -13,7 +13,7 @@
            <h3>Problems I overcame:</h3>
            <p>{{ project.problems}}</p>
            <br>
-           <h3>Skills used:</h3>
+           <!-- <h3>Skills used:</h3> -->
             <ul class="project-skill-list">
                 <li v-for="skill in project.skills" :key="skill" >{{ skill.title }}</li>
             </ul>
@@ -36,29 +36,27 @@ export default {
 <style>
     .project-card{
         position: relative;
-        width:70%;
+        width:80%;
         display: flex;
         justify-content: space-around;
         flex-direction: row;
         transition: 0.4s ease-out;
-        /* border: 1px solid black; */
-        
-        box-shadow:  0 0px 12px 0 rgba(0,0,0,0.4);
+        /* background-image: linear-gradient(160deg, #00a2ff 0%, #8efff2 55%); */
+        /* box-shadow:  0 0px 12px 0 rgba(0,0,0,0.4); */
         border-radius: 10px;
-        /* padding: 5px; */
         margin: 20px 0;
     }
     .project-right{
-        width: 60%;
+        width: 50%;
         margin-left: 10px;
-        /* border: 1px solid black; */
+        border-radius: 10px;
+        background: rgba(255,255,255,0.);
         overflow: none;
         padding: 10px 10px;
     }
     .project-card h1{
         font-size: 3rem; 
         font-weight: 100;
-        /* color: rgb(80, 80, 80);  */
     }
     .project-card h2{
         font-weight: 100;
@@ -87,12 +85,13 @@ export default {
         margin: 0 7.5px 7.5px 0;
         box-shadow:  0 2px 4px 0 rgba(0,0,0,0.2);
         border: 1px solid rgba(0, 0, 0, 0.123);
+        /* background: #2cfae9; */
         border-radius: 10px;
         font-family: 'Montserrat', sans-serif;
-        /* font-weight: 900; */
         transition: 0.25s ease-out;
         display: flex;
         align-items: center;
+        
     }
     /* .project-skill-list li:hover{
         transition: 0.25s ease-out;
@@ -106,28 +105,31 @@ export default {
         bottom: 10px;
     }
     #projects-effect a {
-        color: rgb(0, 120, 180);
-        border: 2px solid rgb(0, 120, 180);
+        color: rgb(255, 255, 255);
+        border: 2px solid rgb(255, 255, 255);
     }
     .project-left{
-        width: 600px;
-        /* min-width: 400px; */
-        /* height: 300px; */
-        /* min-height: 200px; */
-        /* border: 1px solid black; */
+        width: 700px;
         display: flex;
         justify-content: center;
         align-items: center;
-        background: rgba(0,0,0,0.04);
+        /* background: rgba(0, 0, 0, 0.04); */
         border-radius:10px;
     }
     .project-img{
-        /* width: 300px; */
+        /* box-shadow:  0 0 16px 0 rgba(0,0,0,0.9); */
+        
+        border: 1px solid rgba(0, 0, 0, 0.123);
         width: 95%;
         border-radius:10px;
-        /* height: 100%; */
-        /* border: 1px solid black; */
+        transition: 0.25s ease-out;
     }
+    /* @media (min-width: 1200px){
+        .project-img:hover{
+            transform: scale(1.25);
+            transition: 0.25s ease-out;
+        }
+    } */
 
     @media (max-width: 1200px){
         .project-card{
