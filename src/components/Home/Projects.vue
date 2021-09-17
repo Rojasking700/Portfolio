@@ -13,7 +13,7 @@
            <h3>Problems I overcame:</h3>
            <p>{{ project.problems}}</p>
            <br>
-           <h3>Skills used:</h3>
+           <!-- <h3>Skills used:</h3> -->
             <ul class="project-skill-list">
                 <li v-for="skill in project.skills" :key="skill" >{{ skill.title }}</li>
             </ul>
@@ -36,18 +36,18 @@ export default {
 <style>
     .project-card{
         position: relative;
-        width:70%;
+        width:80%;
         display: flex;
         justify-content: space-around;
         flex-direction: row;
         transition: 0.4s ease-out;
         /* background-image: linear-gradient(160deg, #00a2ff 0%, #8efff2 55%); */
-        box-shadow:  0 0px 12px 0 rgba(0,0,0,0.4);
+        /* box-shadow:  0 0px 12px 0 rgba(0,0,0,0.4); */
         border-radius: 10px;
         margin: 20px 0;
     }
     .project-right{
-        width: 60%;
+        width: 50%;
         margin-left: 10px;
         border-radius: 10px;
         background: rgba(255,255,255,0.);
@@ -109,17 +109,27 @@ export default {
         border: 2px solid rgb(255, 255, 255);
     }
     .project-left{
-        width: 600px;
+        width: 700px;
         display: flex;
         justify-content: center;
         align-items: center;
-        background: rgba(0, 0, 0, 0.04);
+        /* background: rgba(0, 0, 0, 0.04); */
         border-radius:10px;
     }
     .project-img{
+        /* box-shadow:  0 0 16px 0 rgba(0,0,0,0.9); */
+        
+        border: 1px solid rgba(0, 0, 0, 0.123);
         width: 95%;
         border-radius:10px;
+        transition: 0.25s ease-out;
     }
+    /* @media (min-width: 1200px){
+        .project-img:hover{
+            transform: scale(1.25);
+            transition: 0.25s ease-out;
+        }
+    } */
 
     @media (max-width: 1200px){
         .project-card{
