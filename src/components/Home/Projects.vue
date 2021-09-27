@@ -1,7 +1,13 @@
 <template>
     <div class="project-card">
         <div class="project-left">
-            <img class="project-img" :src="project.imgs[0]" alt="">
+            <Carousel class="carousel" v-slot="{ currentSlide }" :project="project"> 
+                <Slide v-for="(slide, index) in project.imgs" :key="index" :project="project">
+                    <div v-show="currentSlide === index + 1" class="slide-info">
+                    <img :src="slide" alt="" />
+                    </div>
+                </Slide>
+            </Carousel>
         </div>
         <div class="project-right">
            <h1>{{ project.title }}</h1> 
@@ -27,7 +33,10 @@
 </template>
 
 <script>
+import Carousel from './Carousel.vue'
+import Slide from './Slide.vue'
 export default {
+  components: { Carousel, Slide },
     names: 'project',
     props: ['project']
 }
@@ -45,6 +54,9 @@ export default {
         /* box-shadow:  0 0px 12px 0 rgba(0,0,0,0.4); */
         border-radius: 10px;
         margin: 20px 0;
+        background: #FFFFFF;
+        
+        box-shadow:  0 4px 8px 0 rgba(0,0,0,0.2);
     }
     .project-right{
         width: 50%;
@@ -110,20 +122,54 @@ export default {
     }
     .project-left{
         width: 700px;
+        /* max-width: 400px; */
         display: flex;
         justify-content: center;
         align-items: center;
         /* background: rgba(0, 0, 0, 0.04); */
         border-radius:10px;
     }
-    .project-img{
-        /* box-shadow:  0 0 16px 0 rgba(0,0,0,0.9); */
+    /* .project-img{
         
         border: 1px solid rgba(0, 0, 0, 0.123);
         width: 95%;
         border-radius:10px;
         transition: 0.25s ease-out;
+    } */
+
+    .carousel{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        max-width: 100%;
+        /* max-height: 100%; */
+        /* height: 100%; */
     }
+
+    .slide-info{
+        /* position: absolute; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* top:0; */
+        /* left:0; */
+        width: 100%;
+        /* max-height: 100%; */
+        /* height: 100%; */
+    }
+    .carousel img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        border-radius:10px;
+        /* min-width: 100%; */
+        /* height: 100%; */
+        /* object-fit: cover; */
+    }
+   
     /* @media (min-width: 1200px){
         .project-img:hover{
             transform: scale(1.25);
