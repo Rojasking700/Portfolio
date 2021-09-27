@@ -82,7 +82,7 @@ export default {
 
 <style>
     .navigate{
-        padding: 0 16px;
+        padding: 0 10px;
         height: 100%;
         width: 100%;
         position: absolute;
@@ -106,7 +106,7 @@ export default {
         display:flex;
         align-items:center;
         justify-content: center;
-        border-radius: 50%;
+        border-radius: 60%;
         width: 40px;
         height: 40px;
         background-color: rgb(61, 216, 255);
@@ -115,10 +115,10 @@ export default {
 
     .pagination{
         position: absolute;
-        bottom: 24px;
+        bottom: 5px;
         width: 100%;
         display: flex;
-        gap: 16px;
+        gap: 10px;
         justify-content: center;
         align-items: center;
 
@@ -126,8 +126,8 @@ export default {
 
     .pagination span{
         cursor: porinter;
-        width: 20px;
-        height: 20px;
+        width: 15px;
+        height: 15px;
         border-radius: 50%;
         background-color: #fff;
         box-shadow: 0 1px 3px 0 rgba(0,0,0,0.1), 0 1px 2px 0 rgba(0,0,0,0.6);

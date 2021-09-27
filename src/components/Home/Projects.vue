@@ -121,7 +121,7 @@ export default {
         border: 2px solid rgb(255, 255, 255);
     }
     .project-left{
-        width: 700px;
+        width: 900px;
         /* max-width: 400px; */
         display: flex;
         justify-content: center;
@@ -129,23 +129,16 @@ export default {
         /* background: rgba(0, 0, 0, 0.04); */
         border-radius:10px;
     }
-    /* .project-img{
-        
-        border: 1px solid rgba(0, 0, 0, 0.123);
-        width: 95%;
-        border-radius:10px;
-        transition: 0.25s ease-out;
-    } */
 
     .carousel{
         position: relative;
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 100%;
-        max-width: 100%;
-        /* max-height: 100%; */
-        /* height: 100%; */
+        width: 95%;
+        max-width: 95%;
+        /* max-height: 95%; */
+        /* height: 95%; */
     }
 
     .slide-info{
@@ -167,7 +160,7 @@ export default {
         border-radius:10px;
         /* min-width: 100%; */
         /* height: 100%; */
-        /* object-fit: cover; */
+        object-fit: cover;
     }
    
     /* @media (min-width: 1200px){
