@@ -125,7 +125,7 @@ export default {
     }
 
     .pagination span{
-        cursor: porinter;
+        cursor: pointer;
         width: 15px;
         height: 15px;
         border-radius: 50%;
