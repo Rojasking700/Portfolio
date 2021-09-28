@@ -13,9 +13,6 @@
 
         <!-- Pagination -->
         <div class="pagination">
-            <!-- <transition name="slide">
-                <h2>login</h2>
-            </transition> -->
             <div class="pags">
                 <span 
                 @click="goToSlide(index)"
