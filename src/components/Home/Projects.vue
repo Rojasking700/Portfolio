@@ -4,8 +4,8 @@
             <Carousel class="carousel" v-slot="{ currentSlide }" :project="project"> 
                 <Slide v-for="(slide, index) in project.imgs" :key="index" :project="project">
                     <div v-show="currentSlide === index + 1" class="slide-info">
-                        <img :src="slide" alt="" />
-                        <!-- <p class="slide-caption">hello</p> -->
+                        <img :src="slide.src" alt="" />
+                        <h2 class="slide-caption">{{ slide.cap }}</h2>
                     </div>
                 </Slide>
             </Carousel>
@@ -194,8 +194,11 @@ export default {
         /* .project-img{
             margin: 2% 0;
         } */
-    @media (max-width: 800px) {
-        
+    @media (max-width: 500px) {
+        .project-left{
+            width: 100%;
+            height: 50vw;
+        }
     }
     }
 </style>
