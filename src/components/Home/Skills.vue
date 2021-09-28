@@ -11,11 +11,7 @@
                 <h3>{{ skill.title }}:</h3>
                 <p>
                     {{ skill.detail }}
-                    <!-- Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime aliquid debitis vero ab veniam. Magnam amet ea laboriosam eius quibusdam? -->
                 </p>
-                
-                <!-- <a class="skill-btn" >Learn More</a> -->
-                <!-- <p id="disabled-btn">(button is disabled)</p> -->
                 
             </div>
         </div>

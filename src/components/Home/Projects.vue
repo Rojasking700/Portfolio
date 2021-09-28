@@ -1,7 +1,14 @@
 <template>
     <div class="project-card">
         <div class="project-left">
-            <img class="project-img" :src="project.imgs[0]" alt="">
+            <Carousel class="carousel" v-slot="{ currentSlide }" :project="project"> 
+                <Slide v-for="(slide, index) in project.imgs" :key="index" :project="project">
+                    <div v-show="currentSlide === index + 1" class="slide-info">
+                        <img :src="slide.src" alt="" />
+                        <h2 class="slide-caption">{{ slide.cap }}</h2>
+                    </div>
+                </Slide>
+            </Carousel>
         </div>
         <div class="project-right">
            <h1>{{ project.title }}</h1> 
@@ -27,7 +34,10 @@
 </template>
 
 <script>
+import Carousel from './Carousel.vue'
+import Slide from './Slide.vue'
 export default {
+  components: { Carousel, Slide },
     names: 'project',
     props: ['project']
 }
@@ -41,10 +51,10 @@ export default {
         justify-content: space-around;
         flex-direction: row;
         transition: 0.4s ease-out;
-        /* background-image: linear-gradient(160deg, #00a2ff 0%, #8efff2 55%); */
-        /* box-shadow:  0 0px 12px 0 rgba(0,0,0,0.4); */
         border-radius: 10px;
         margin: 20px 0;
+        background: #FFFFFF;
+        box-shadow:  0 4px 8px 0 rgba(0,0,0,0.2);
     }
     .project-right{
         width: 50%;
@@ -104,26 +114,47 @@ export default {
         right:10px;
         bottom: 10px;
     }
-    #projects-effect a {
-        color: rgb(255, 255, 255);
-        border: 2px solid rgb(255, 255, 255);
-    }
+    
     .project-left{
-        width: 700px;
+        width: 900px;
         display: flex;
         justify-content: center;
         align-items: center;
-        /* background: rgba(0, 0, 0, 0.04); */
         border-radius:10px;
     }
-    .project-img{
-        /* box-shadow:  0 0 16px 0 rgba(0,0,0,0.9); */
-        
-        border: 1px solid rgba(0, 0, 0, 0.123);
+
+    .carousel{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
         width: 95%;
-        border-radius:10px;
-        transition: 0.25s ease-out;
+        max-width: 95%;
+        height: 95%;
     }
+
+    .slide-info{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .carousel img{
+        position: absolute;
+        width: 100%;
+        border-radius:10px;
+        object-fit: cover;
+    }
+   .slide-caption{
+        position: absolute;
+        font-weight: 900;
+        font-size: 25px;
+        bottom: 25px;
+        z-index: 1000;
+        color:rgb(245, 245, 245);
+        text-shadow: 0px 0px 3px  rgb(0, 0, 0); 
+   }
     /* @media (min-width: 1200px){
         .project-img:hover{
             transform: scale(1.25);
@@ -139,17 +170,18 @@ export default {
         }
         .project-left{
             width: 100%;
+            height: 60vw;
         }
         .project-right{
             width: 100%;
             padding: 0 10px;
             margin: 0;
         }
-        .project-img{
-            margin: 2% 0;
+    @media (max-width: 500px) {
+        .project-left{
+            width: 100%;
+            height: 50vw;
         }
-    @media (max-width: 800px) {
-        
     }
     }
 </style>

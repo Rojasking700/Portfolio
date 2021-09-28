@@ -55,6 +55,7 @@ export default {
     min-height: 100vh;
     /* margin-bottom: 30vh; */
     padding-bottom: 20rem;
+    background: #fafafa;
   }
   p{
     font-family: 'Montserrat', sans-serif;

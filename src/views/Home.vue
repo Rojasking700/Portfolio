@@ -161,13 +161,13 @@ export default {
       ],
       projects: [
         {
-          title: 'Recipe Blog',
+          title: 'Recipe_Blog',
           sub: 'Share all your favorite recipes!',
           brief: 'A blog is designed to help you share any meals you have made and any recipes you would like to share! Easily create a post or scroll through others’ posts assembled by the React frontend. All of this data is handled through the flask backend that stores and retrieves it from a database.',
           problems: 'Creating an account wasn’t as easy as it is now. When trying to create new accounts using postman, I would submit the data but it would not show up on my database. I figured out, by printing all the data coming that I was not filling all the requirements need for that model. Moral of the story: when in doubt print it out!',
           skills: [{title:'Python'},{title:'Javascript'},{title:'Flask'},{title:'React.js'},{title:'API'},{title:'SQL'},{title:'Database'},{title:'HTML'},{title:'CSS'}],
           gitLink: 'https://github.com/briannaswales/flask-react-group-2',
-          imgs: [require('../assets/Projects/Recipe_blog/HomeRecipe.jpg')],
+          imgs: [{src:require('../assets/Projects/Recipe_blog/HomeRecipe.jpg'),cap:'Home'},{src:require('../assets/Projects/Recipe_blog/CreatePost.jpg'),cap:'Create Post'},{src:require('../assets/Projects/Recipe_blog/CreateAccountRecipe.jpg'),cap:'Create Acount'},{src:require('../assets/Projects/Recipe_blog/LoginRecipe.jpg'),cap:'Login'}],
         },
         {
           title: 'Portfolio',
@@ -176,7 +176,7 @@ export default {
           problems: 'The Icons moving with the mouse proved to be a learning curve with the Vue. Previously I used vanilla Javascript that kept track of the coordinates of the mouse, but In Vue I had to create various lifecycle hooks to listen for mouse movement, update mouse coordinate, and translate the images accordingly.',
           skills: [{title:'Javascript'},{title:'Vue.js'},{title:'HTML'},{title:'CSS'},],
           gitLink: 'https://github.com/Rojasking700/Portfolio',
-          imgs: [require('../assets/Projects/Portfolio/Home_Protfolio.jpeg')],
+          imgs: [{src:require('../assets/Projects/Portfolio/Home_Portfolio.jpg'),cap:'Home'},{src:require('../assets/Projects/Portfolio/About_Portfolio.jpg'),cap:'About'},{src:require('../assets/Projects/Portfolio/Contact_Portfolio.jpg'),cap:'Contact'},],
         },
         {
           title: 'MyFi',
@@ -185,7 +185,7 @@ export default {
           problems: 'I was unable to keep the users logged in every time they refreshed the page. Determined, I read various forums online on how to save data to local storage. With that, I was able to implement the use of tokens that expire after 60 mins.',
           skills: [{title:'Python',detail:''},{title:'Javascript'},{title:'Flask'},{title:'React.js'},{title:'API'},{title:'SQL'},{title:'Database'},{title:'HTML'},{title:'CSS'}],
           gitLink: 'https://github.com/Rojasking700/MyFi',
-          imgs: [require('../assets/Projects/MyFI/FullResult.jpg')],
+          imgs: [{src:require('../assets/Projects/MyFI/Search.jpg'),cap:'Search'},{src:require('../assets/Projects/MyFI/TopResult.jpg'),cap:'Overview'},{src:require('../assets/Projects/MyFI/BottomResult.jpg'),cap:'Chart'},],
         },
       ],
     }
