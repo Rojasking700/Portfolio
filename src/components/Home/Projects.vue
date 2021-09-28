@@ -4,7 +4,8 @@
             <Carousel class="carousel" v-slot="{ currentSlide }" :project="project"> 
                 <Slide v-for="(slide, index) in project.imgs" :key="index" :project="project">
                     <div v-show="currentSlide === index + 1" class="slide-info">
-                    <img :src="slide" alt="" />
+                        <img :src="slide" alt="" />
+                        <!-- <p class="slide-caption">hello</p> -->
                     </div>
                 </Slide>
             </Carousel>
@@ -55,7 +56,6 @@ export default {
         border-radius: 10px;
         margin: 20px 0;
         background: #FFFFFF;
-        
         box-shadow:  0 4px 8px 0 rgba(0,0,0,0.2);
     }
     .project-right{
@@ -116,13 +116,9 @@ export default {
         right:10px;
         bottom: 10px;
     }
-    #projects-effect a {
-        color: rgb(255, 255, 255);
-        border: 2px solid rgb(255, 255, 255);
-    }
+    
     .project-left{
         width: 900px;
-        /* max-width: 400px; */
         display: flex;
         justify-content: center;
         align-items: center;
@@ -135,14 +131,15 @@ export default {
         display: flex;
         justify-content: center;
         align-items: center;
+        flex-direction: column;
         width: 95%;
         max-width: 95%;
         /* max-height: 95%; */
-        /* height: 95%; */
+        height: 95%;
     }
 
     .slide-info{
-        /* position: absolute; */
+        /* position: relative; */
         display: flex;
         justify-content: center;
         align-items: center;
@@ -153,16 +150,25 @@ export default {
         /* height: 100%; */
     }
     .carousel img{
-        display: flex;
+        position: absolute;
+        /* display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: center; */
         width: 100%;
         border-radius:10px;
         /* min-width: 100%; */
         /* height: 100%; */
         object-fit: cover;
     }
-   
+   .slide-caption{
+        position: absolute;
+        font-weight: 900;
+        font-size: 25px;
+        bottom: 25px;
+        z-index: 1000;
+        color:rgb(245, 245, 245);
+        text-shadow: 0px 0px 3px  rgb(0, 0, 0); 
+   }
     /* @media (min-width: 1200px){
         .project-img:hover{
             transform: scale(1.25);
@@ -178,15 +184,16 @@ export default {
         }
         .project-left{
             width: 100%;
+            height: 60vw;
         }
         .project-right{
             width: 100%;
             padding: 0 10px;
             margin: 0;
         }
-        .project-img{
+        /* .project-img{
             margin: 2% 0;
-        }
+        } */
     @media (max-width: 800px) {
         
     }

@@ -1,7 +1,6 @@
 <template>
     <div class="carousel">
         <slot :currentSlide="currentSlide"/>
-
         <!-- Navigation -->
         <div class="navigate">
             <div class="toggle-page left">
@@ -14,13 +13,17 @@
 
         <!-- Pagination -->
         <div class="pagination">
-            <span 
-            @click="goToSlide(index)"
-            v-for="(slide,index) in getSlideCount" 
-            :key="index" 
-            :class="{active: index +1 === currentSlide}">
-                <!-- {{ slide }} -->
-            </span>
+            <!-- <transition name="slide">
+                <h2>login</h2>
+            </transition> -->
+            <div class="pags">
+                <span 
+                @click="goToSlide(index)"
+                v-for="(slide,index) in getSlideCount" 
+                :key="index" 
+                :class="{active: index +1 === currentSlide}">
+                </span>
+            </div>
         </div>
     </div>
 </template>
@@ -33,7 +36,7 @@ export default {
     setup(props) {
         const currentSlide = ref(1);
         const getSlideCount = ref(null);
-        const autoPlayEnabled = ref(false);
+        const autoPlayEnabled = ref(true);
         const timeoutDuration = ref(5000);
 
         // next slide
@@ -121,7 +124,14 @@ export default {
         gap: 10px;
         justify-content: center;
         align-items: center;
-
+        flex-direction: column;
+    }
+    .pags{
+        display: flex;
+        gap: 5px;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
     }
 
     .pagination span{
@@ -136,4 +146,6 @@ export default {
     .pagination .active {
         background-color: rgb(61, 216, 255);
     }
+
+    
 </style>

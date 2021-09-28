@@ -16,7 +16,7 @@ export default {
 <style>
     .slide-enter-active,
     .slide-leave-active{
-        transition: opacity 0.7s ease-in-out;
+        transition: opacity 0.5s ease-in-out;
     }
     .slide-enter-from,
     .slide-leave-to{

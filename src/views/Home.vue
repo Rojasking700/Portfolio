@@ -185,7 +185,7 @@ export default {
           problems: 'I was unable to keep the users logged in every time they refreshed the page. Determined, I read various forums online on how to save data to local storage. With that, I was able to implement the use of tokens that expire after 60 mins.',
           skills: [{title:'Python',detail:''},{title:'Javascript'},{title:'Flask'},{title:'React.js'},{title:'API'},{title:'SQL'},{title:'Database'},{title:'HTML'},{title:'CSS'}],
           gitLink: 'https://github.com/Rojasking700/MyFi',
-          imgs: [require('../assets/Projects/MyFI/FullResult.jpg'),require('../assets/Projects/MyFI/Search.jpg')],
+          imgs: [require('../assets/Projects/MyFI/TopResult.jpg'),require('../assets/Projects/MyFI/BottomResult.jpg'),require('../assets/Projects/MyFI/Search.jpg')],
         },
       ],
     }
