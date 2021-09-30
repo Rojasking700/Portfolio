@@ -156,9 +156,7 @@ export default {
         text-shadow: 0px 0px 3px  rgb(0, 0, 0); 
    }
     /* @media (min-width: 1200px){
-        .project-img:hover{
-            transform: scale(1.25);
-            transition: 0.25s ease-out;
+        
         }
     } */
 
