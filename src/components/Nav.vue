@@ -145,6 +145,20 @@ export default {
         transform: rotate(-30deg);
         transition: .5s ease all;
     }
+    @media (min-width: 2500px) {
+        .branding{
+            font-size: 4.5rem;
+            /* transform: scale(1.25); */
+        }
+        .branding img {
+            width: 125px;
+        }
+        .link{
+            font-size: 2.75rem;
+        }
+        
+        
+    }
     @media (max-width: 800px) {
         .branding{
             font-size: 1.75rem;

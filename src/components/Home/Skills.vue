@@ -133,7 +133,6 @@ export default {
     .skill-image-wrap img {
         width: 100px;
         height: 100px;
-        /* filter: drop-shadow(0px 0px 12px rgba(0,0,0,0,1)); */
     }
     .skill-detail{
         align-items: center;
@@ -145,12 +144,12 @@ export default {
     }
     .skill-detail p {
         font-family: 'Montserrat', sans-serif;
-        font-size: 1rem;
+        /* font-size: 1rem; */
         line-height: 1.5;
         font-weight: medium;
         padding: 10px 0;
     }
-    #disabled-btn{
+    /* #disabled-btn{
         padding: 0;
         padding-top: 7px;
         margin: 0;
@@ -167,7 +166,7 @@ export default {
         display: flex;
         justify-content: center;
         width: 60%;
-        /* display: inline-block; */
+        display: inline-block;
         padding: 15px 5px;
         font-size: 1.3rem;
         cursor: pointer;
@@ -194,6 +193,25 @@ export default {
         box-shadow: 2px 2px #666;
         transform: translateY(3px);
         transition: 0.01s ease;
+    } */
+
+    @media (min-width: 2500px){
+        .skill{
+            min-width:475px;
+        }
+        .bg-text{
+            font-size: 5rem;
+        }
+        .skill-image-wrap img {
+            width: 150px;
+            height: 150px;
+        }
+        .skill-detail h3{
+            font-size: 2rem;
+        }
+        .skill-detail p{
+            font-size: 1.5rem;
+        }
     }
 
     @media (max-width: 800px){
@@ -203,11 +221,11 @@ export default {
         .bg-text{
             font-size: 3rem;
         }
-        .skill-btn{
+        /* .skill-btn{
             font-size: 1rem;
             padding: 1rem 1rem;
             width:70%;
-        }
+        } */
     }
 
 

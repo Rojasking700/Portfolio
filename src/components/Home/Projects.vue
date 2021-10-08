@@ -132,6 +132,8 @@ export default {
         width: 95%;
         max-width: 95%;
         height: 95%;
+        
+        /* border: 1px solid rgba(0, 0, 0, 1); */
     }
 
     .slide-info{
@@ -145,6 +147,8 @@ export default {
         width: 100%;
         border-radius:10px;
         object-fit: cover;
+        padding: -1px;
+        border: 1px solid rgba(0, 0, 0, 0.1);
     }
    .slide-caption{
         position: absolute;
