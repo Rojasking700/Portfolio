@@ -254,6 +254,11 @@ export default {
   align-items: center;
 }
 
+  @media(min-width: 2500px){
+    .skills{
+      max-width: 80%;
+    }
+  }
  @media (max-width: 800px) {
    .skills{
      max-width: 80%;

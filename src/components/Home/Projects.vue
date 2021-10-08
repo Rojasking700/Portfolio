@@ -159,10 +159,33 @@ export default {
         color:rgb(245, 245, 245);
         text-shadow: 0px 0px 3px  rgb(0, 0, 0); 
    }
-    /* @media (min-width: 1200px){
-        
+
+    @media(min-width: 2500px){
+        .project-card{
+            width: 90%;
         }
-    } */
+        .project-card h1{
+            font-size: 5rem;
+        }
+        .project-card h2{
+            font-size: 3rem;
+        }
+        .project-card h3{
+            font-size: 2.25rem;
+        }
+        .project-card p{
+            font-size: 1.75rem;
+        }
+        .project-left{
+            width: 1400px;
+        }
+        .project-skill-list li{
+            font-size: 2rem;
+            padding: 15px;
+            margin: 0 15px 15px 0;
+            /* border-radius: 15px; */
+        }
+    }
 
     @media (max-width: 1200px){
         .project-card{

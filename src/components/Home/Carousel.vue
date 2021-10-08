@@ -144,5 +144,17 @@ export default {
         background-color: rgb(61, 216, 255);
     }
 
-    
+    @media(min-width: 2500px){
+        .navigate i{
+            width: 60px;
+            height: 60px;
+        }
+        .pags{
+            gap:10px
+        }
+        .pagination span{
+            width: 20px;
+            height: 20px;
+        }
+    }
 </style>
