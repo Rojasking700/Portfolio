@@ -202,6 +202,18 @@ export default {
   transform: scale(1.2) rotate(45deg);
 }
 
+@media(min-width: 2500px){
+    footer{
+        height: 40rem;
+    }
+    .lets-talk{
+        font-size: 1.5rem;
+    }
+    .footer-contact{
+        font-size: 1.5rem;
+    }
+}
+
 @media (max-width: 800px){
     footer{
         height: 40rem;

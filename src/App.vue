@@ -60,6 +60,12 @@ export default {
   p{
     font-family: 'Montserrat', sans-serif;
   }
+
+  @media(min-width: 2500px){
+    .app{
+      padding-bottom: 40rem;
+    }
+  }
   @media (max-width: 800px){
     .app{
       padding-bottom: 40rem;

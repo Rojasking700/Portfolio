@@ -176,11 +176,14 @@ export default {
         .project-card p{
             font-size: 1.75rem;
         }
+        br{
+            transform: scale(5);
+        }
         .project-left{
             width: 1400px;
         }
         .project-skill-list li{
-            font-size: 2rem;
+            font-size: 1.5rem;
             padding: 15px;
             margin: 0 15px 15px 0;
             /* border-radius: 15px; */
